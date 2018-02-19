@@ -1,6 +1,250 @@
 <odoo>
     <data>
-            <!---->
+        <template id="theme_florata_footer" inherit_id="website.layout" name="theme_florata_footer">
+            <xpath expr="//footer" position="inside">
+                <section id="welcome-to-brooklyn" data-effect="fadeIn" data-width="centered" class="page-id-25 entry-content normal-background  dark   ">
+                    <a class="ut-offset-anchor" id="section-welcome-to-brooklyn" name="section-welcome-to-brooklyn">welcome-to-brooklyn</a>
+                    <div class="grid-container section-header-holder" style="opacity: 1;">
+                        <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
+                            <header class="parallax-header pt-style-7 ">
+                                <h2 class="parallax-title ">
+                                    <span>Sobre nós</span>
+                                </h2>
+                                <div class="lead">
+                                    <p>Trabalhamos com a manipulação de medicamentos alopáticos, medicamentos homeopáticos, medicamentos controlados, fitoterápicos, nutracêuticos, suplementos alimentares, fórmulas ortomoleculares, fórmulas odontológicas, terapia floral, cosméticos e cosmecêuticos, além da comercialização de vários produtos industrializados, para que seu tratamento seja completo. </p>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="grid-container section-content" style="opacity: 1;">
+                        <div class="grid-100 mobile-grid-100 tablet-grid-100">
+                            <p>&#160;</p>
+                            <p>&#160;</p>
+                            <p style="text-align: center;"></p>
+                            <div class="ut-one-fourth  ">
+                                <div style="text-align:center; ">
+                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/derma.png"/>
+                                </div>
+                                <p>&#160;</p>
+                                <p style="text-align: center;">FÓRMULAS DERMATOLÓGICAS</p>
+                            </div>
+                            <div class="ut-one-fourth  ">
+                                <div style="text-align:center; ">
+                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/fito.png"/>
+                                </div>
+                                <p>&#160;</p>
+                                <p style="text-align: center;">FITOTERÁPICOS E NUTRACÊUTICOS</p>
+                            </div>
+                            <div class="ut-one-fourth  ">
+                                <div style="text-align:center; ">
+                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/capsula.png"/>
+                                </div>
+                                <p>&#160;</p>
+                                <p style="text-align: center;">MEDICAMENTOS ALOPÁTICOS</p>
+                            </div>
+                            <div class="ut-one-fourth ut-column-last  ">
+                                <div style="text-align:center; ">
+                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/homeo.png"/>
+                                </div>
+                                <p>&#160;</p>
+                                <p style="text-align: center;">FLORAIS E HOMEOPATIAS</p>
+                            </div>
+                            <div class="clear"></div>
+                            <p>&#160;</p>
+                            <p>&#160;</p>
+                            <div class="brookly-hatom-data" style="display:none;visibility:hidden;"></div>
+                        </div>
+                    </div>
+                    <div class="ut-scroll-up-waypoint" data-section="section-welcome-to-brooklyn"></div>
+                </section>
+            </xpath>
+            <xpath expr="//footer" position="inside">
+                <section id="quais-as-vantagens-da-manipulacao" data-effect="fadeIn" data-width="centered" class="page-id-2704 entry-content normal-background  dark   ">
+                    <a class="ut-offset-anchor" id="section-quais-as-vantagens-da-manipulacao" name="section-quais-as-vantagens-da-manipulacao">quais-as-vantagens-da-manipulacao</a>
+                    <div class="grid-container section-header-holder" style="opacity: 1;">
+                        <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
+                            <header class="parallax-header pt-style-7 ">
+                                <h2 class="parallax-title ">
+                                    <span>Quais as vantagens da manipulação?</span>
+                                </h2>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="grid-container section-content" style="opacity: 1;">
+                        <div class="grid-100 mobile-grid-100 tablet-grid-100">
+                            <p style="text-align: center;"></p>
+                            <div data-effect="bounceIn" class="ut-one-fifth  animated bounceIn">
+                                <span class="aligncenter ut-custom-icon">
+                                    <i class="fa fa-money fa-5x" style="color:#ffffff"></i>
+                                </span>
+                                <p>&#160;</p>
+                                <h3 style="text-align: center;">Seus medicamentos são manipulados nas dosagens e quantidades exatas prescritas pelo médico, evitando desperdícios e trazendo economia para o seu bolso.</h3>
+                            </div>
+                            <div data-effect="bounceIn" class="ut-one-fifth  animated bounceIn">
+                                <span class="aligncenter ut-custom-icon">
+                                    <i class="fa fa-flask fa-5x" style="color:#ffffff"></i>
+                                </span>
+                                <p>&#160;</p>
+                                <h3 style="text-align: center;">Com a manipulação é possível associar mais de um medicamento em uma mesma cápsula, caso não existam incompatibilidades farmacológicas. Essa associação diminui o número de tomadas diárias e facilita a adesão ao tratamento.</h3>
+                            </div>
+                            <div data-effect="bounceIn" class="ut-one-fifth  animated bounceIn">
+                                <span class="aligncenter ut-custom-icon">
+                                    <i class="fa fa-leaf fa-5x" style="color:#ffffff"></i>
+                                </span>
+                                <p>&#160;</p>
+                                <h3 style="text-align: center;">Alguns tratamentos requerem medicamentos e dosagens que não se encontram no mercado e caso a farmácia de manipulação tenha a matéria-prima, ela poderá atender à prescrição, manipulando o produto. </h3>
+                            </div>
+                            <div data-effect="bounceIn" class="ut-one-fifth  animated bounceIn">
+                                <span class="aligncenter ut-custom-icon">
+                                    <i class="fa fa-tint fa-5x" style="color:#ffffff"></i>
+                                </span>
+                                <p>&#160;</p>
+                                <h3 style="text-align: center;">Se você não gosta de tomar medicamentos em forma de comprimidos e cápsulas, por exemplo, é possível fazê-los na forma de saches solúveis, gotas e muitas vezes até mesmo na forma de balas, tabletes sublinguais e bombons de chocolate!</h3>
+                            </div>
+                            <div data-effect="bounceIn" class="ut-one-fifth ut-column-last  animated bounceIn">
+                                <span class="aligncenter ut-custom-icon">
+                                    <i class="fa fa-paint-brush fa-5x" style="color:#ffffff"></i>
+                                </span>
+                                <p>&#160;</p>
+                                <h3 style="text-align: center;">Você pode manipular os seus cosméticos com a essência e a cor de sua preferência. </h3>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="brookly-hatom-data" style="display:none;visibility:hidden;"></div>
+                        </div>
+                    </div>
+                    <div class="ut-scroll-up-waypoint" data-section="section-quais-as-vantagens-da-manipulacao"></div>
+                </section>
+            </xpath>
+            <xpath expr="//footer" position="inside">
+                <section id="happy-clients" data-effect="fadeIn" data-width="centered" class="page-id-80 entry-content normal-background  light   ">
+                    <a class="ut-offset-anchor" id="section-happy-clients" name="section-happy-clients">happy-clients</a>
+                    <div class="parallax-overlay parallax-overlay-pattern style_one">
+                        <div class="grid-container section-header-holder" style="opacity: 1;">
+                            <!-- section header -->
+                            <div class="grid-100 mobile-grid-100 tablet-grid-100">
+                                <header class="parallax-header pt-style-7 ">
+                                    <h2 class="parallax-title ">
+                                        <span>Nossas filiais</span>
+                                    </h2>
+                                </header>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="grid-container section-content" style="opacity: 1;">
+                            <div class="grid-100 mobile-grid-100 tablet-grid-100">
+                                <p style="text-align: center;">
+                                    <span style="color: #ffffff;"></span>
+                                </p>
+                                <div data-effect="slideInLeft" class="ut-one-half  animated slideInLeft">
+                                    <span class="aligncenter ut-custom-icon">
+                                        <i class="fa fa-map-marker fa-5x" style="color:#ffffff"></i>
+                                    </span>
+                                    <p></p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">Terceira Avenida, 1215 – Centro,</span>
+                                    </p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">Balneário Camboriú – SC, 88330-095</span>
+                                    </p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">
+                                            <a style="color: #ffffff;" href="https://www.google.com.br/maps/place/Florata+Farm%C3%A1cia+de+Manipula%C3%A7%C3%A3o/@-26.9972922,-48.6330473,15z/data=!4m5!3m4!1s0x0:0x8ff9520868a6106!8m2!3d-26.9972922!4d-48.6330473" target="_blank" rel="noopener">Clique para ver no mapa.</a>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div data-effect="slideInRight" class="ut-one-half ut-column-last  animated slideInRight">
+                                    <span class="aligncenter ut-custom-icon">
+                                        <i class="fa fa-map-marker fa-5x" style="color:#ffffff"></i>
+                                    </span>
+                                    <p></p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">Heitor Liberato, 1550 – São João,</span>
+                                    </p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">Itajaí – SC, 88304-101</span>
+                                    </p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">
+                                            <a style="color: #ffffff;" href="https://www.google.com.br/maps/place/Bistek+Supermercados/@-26.9063579,-48.6729694,15z/data=!4m5!3m4!1s0x0:0x21c1726bd6c36b86!8m2!3d-26.9063579!4d-48.6729694" target="_blank" rel="noopener">Clique para ver no mapa.</a>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="clear"></div>
+                                <p></p>
+                                <div class="brookly-hatom-data" style="display:none;visibility:hidden;"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="ut-scroll-up-waypoint" data-section="section-happy-clients"></div>
+                </section>
+            </xpath>
+            <xpath expr="//footer" position="inside">
+                <section id="contact-section" data-effect="fadeIn" class="animated contact-section  light  ">
+                    <a class="ut-offset-anchor" id="section-contact"></a>
+                    <div class="grid-container parallax-content">
+                        <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
+                            <header class="parallax-header pt-style-7">
+                                <h2 class="parallax-title">
+                                    <span>Redes sociais</span>
+                                </h2>
+                            </header>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="grid-container section-content" style="opacity: 1;">
+                        <div class="grid-100 mobile-grid-100 tablet-grid-100 grid-parent">
+                            <div class="contact-wrap">
+                                <div class="grid-100 mobile-grid-100 tablet-grid-100">
+                                    <div class="ut-left-footer-area clearfix">
+                                        <p></p>
+                                        <ul class="ut-social-network ">
+                                            <li class="grid-25 tablet-grid-25 mobile-grid-100  prefix-25 tablet-prefix-25 ">
+                                                <a target="_blank" href="https://www.facebook.com/floratamanipulacaooficial/" class="ut-social-link">
+                                                    <span class="ut-social-icon">
+                                                        <i class="fa fa-facebook fa-4x"></i>
+                                                    </span>
+                                                    <h3 class="ut-social-title">Facebook</h3>
+                                                </a>
+                                            </li>
+                                            <li class="grid-25 tablet-grid-25 mobile-grid-100   suffix-25 tablet-suffix-25">
+                                                <a target="_blank" href="https://www.instagram.com/floratamanipulacaooficial/" class="ut-social-link">
+                                                    <span class="ut-social-icon">
+                                                        <i class="fa fa-instagram fa-4x"></i>
+                                                    </span>
+                                                    <h3 class="ut-social-title">Instagram</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </xpath>
+           <xpath expr="//footer" position="inside">
+                <footer class="footer ut-footer-dark">
+                    <a href="#top" class="toTop">
+                        <i class="fa fa-angle-double-up"></i>
+                    </a>
+                    <div class="footer-content">
+                        <div class="grid-container">
+                            <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
+                        
+                            Copyright © Florata Manipulação                        
+                                                    
+                        
+                                
+                        </div>
+                        </div>
+                    </div>
+                </footer>
+            </xpath>
+        </template>
         <template id="theme_florata-login" inherit_id="web.login" name="theme_florata">
             <!--
             <xpath expr="//form" position="attributes">
@@ -8,65 +252,44 @@
             </xpath>
             -->
         </template>
-            <!---->
         <template id="homepage_template" inherit_id="website.homepage">
             <xpath expr="//div[@id='wrap']" position="inside">
-                <!--
-                <div id="events"><t t-call='your_module_name.wdi_homepage_data'/>
-                </div>
-                -->
-                <!--
                 <div>
-                    <attribute name="style">background-color: #333;</attribute>
+                    <img src="/theme_florata/static/src/img/banner.jpg" style="height: 100%; width: 100%;"/>
                 </div>
-                -->
-                <!--
-                <div>
-                    <attribute name="style">background-image: url(/theme_florata/static/src/img/banner.jpg); background-size: 100% 100%;</attribute>
-                    <div style='background-image: url(/theme_florata/static/src/img/banner.jpg); background-size: 100% 100%;'>
-                </div>
-                -->
-                <!--
-                <div>
-                    <img src="/theme_florata/static/src/img/banner.jpg" style="height: 400px; width: 400px;"/>
-                </div>
-                -->
             </xpath>
         </template>
-            <!---->
         <template id="website.home" name="Home">
-            <!---->
-                <t name="Homepage" priority="29" t-name="website.homepage">
-                <t t-call="website.layout">
-                    <t t-set="pageName" t-value="'homepage'"/>
-                    <div id="wrap" class="oe_structure oe_empty">
-                    <section class="s_big_picture bg-gray-lighter mt0" style="height: 504px; overflow: hidden;">
-                        <div class="container">
-                        <h2 class="text-center o_default_snippet_text">Um Título chamativo</h2>
-                        <div class="row">
-                            <div class="col-md-12">
-                            <img class="img img-responsive" src="/web/image/website.s_big_picture_default_image" style="margin: 0 auto;" alt="Odor CMS - uma imagem grande"/>
-                            </div>
-                            <div class="col-md-6 col-md-offset-3 mb16 mt16">
-                            <p class="text-center">
-                                <b class="o_default_snippet_text">Um Pequeno Subtítulo</b>
-                            </p>
-                            <p class="text-center o_default_snippet_text">
-                                        Escolha uma imagem vibrante e escreva um parágrafo inspirador
-                sobre isso. Ele não tem que ser longo, mas deve
-                reforçar sua imagem.
-                                    </p>
-                            <p class="text-center">
-                                <a href="/page/website.contactus" class="o_default_snippet_text">Contacte-nos »</a>
-                            </p>
-                            </div>
+            <t name="Homepage" priority="29" t-name="website.homepage">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'homepage'"/>
+                <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_big_picture bg-gray-lighter mt0" style="height: 504px; overflow: hidden;">
+                    <div class="container">
+                    <h2 class="text-center o_default_snippet_text">Um Título chamativo</h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <img class="img img-responsive" src="/web/image/website.s_big_picture_default_image" style="margin: 0 auto;" alt="Odor CMS - uma imagem grande"/>
                         </div>
+                        <div class="col-md-6 col-md-offset-3 mb16 mt16">
+                        <p class="text-center">
+                            <b class="o_default_snippet_text">Um Pequeno Subtítulo</b>
+                        </p>
+                        <p class="text-center o_default_snippet_text">
+                                    Escolha uma imagem vibrante e escreva um parágrafo inspirador
+            sobre isso. Ele não tem que ser longo, mas deve
+            reforçar sua imagem.
+                                </p>
+                        <p class="text-center">
+                            <a href="/page/website.contactus" class="o_default_snippet_text">Contacte-nos »</a>
+                        </p>
                         </div>
-                    </section>
                     </div>
-                </t>
-                </t>
-            <!---->
+                    </div>
+                </section>
+                </div>
+            </t>
+            </t>
         </template>
     </data>
 </odoo>

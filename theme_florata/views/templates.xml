@@ -1,8 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 <template id="assets_frontend" inherit_id="website.assets_frontend" name="Theme Florata Assets Frontend">
-  <xpath expr="link[last()]" position="after">
-    <link rel="stylesheet" href="/theme_florata/static/src/less/customize_modal.less"/>
+    <!--
+    <xpath expr="link[last()]" position="after">
+    -->
+    <xpath expr="." position="inside">
+
+    <!---->
+    
+      <script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/floratamanipulacao.com.br\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Verifique se voc\u00ea n\u00e3o \u00e9 um rob\u00f4."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/theme_florata/static/src/js/scripts.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/tabs.collapse.min.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/jquery.visible.min.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/jquery.appear.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/jquery.fitvids.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var utShortcode = {"ajaxurl":"http:\/\/floratamanipulacao.com.br\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/theme_florata/static/src/js/ut.scplugin.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/toucheffects.min.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/jquery.easing.min.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/superfish.min.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/retina.min.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/jquery.parallax.min.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/jquery.scrollTo.min.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/jquery.waypoints.min.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/jquery.prettyPhoto.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var retina_logos = {"sitelogo_retina":"http:\/\/35.186.179.129\/florata\/wp-content\/uploads\/2017\/11\/logo-florata.png","alternate_logo_retina":"http:\/\/35.186.179.129\/florata\/wp-content\/uploads\/2017\/11\/logo-florata.png"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/theme_florata/static/src/js/ut-init.js'></script>
+<script type='text/javascript' src='/theme_florata/static/src/js/wp-embed.min.js'></script>
+      
+    <script type="text/javascript">
+    /* <![CDATA[ */        
+        
+		(function($){
+        	
+				"use strict";
+		
+				$(document).ready(function(){ var brooklyn_scroll_offset = $("#header-section").outerHeight();window.matchMedia||(window.matchMedia=function(){var c=window.styleMedia||window.media;if(!c){var a=document.createElement("style"),d=document.getElementsByTagName("script")[0],e=null;a.type="text/css";a.id="matchmediajs-test";d.parentNode.insertBefore(a,d);e="getComputedStyle"in window&&window.getComputedStyle(a,null)||a.currentStyle;c={matchMedium:function(b){b="@media "+b+"{ #matchmediajs-test { width: 1px; } }";a.styleSheet?a.styleSheet.cssText=b:a.textContent=b;return"1px"===e.width}}}return function(a){return{matches:c.matchMedium(a|| "all"),media:a||"all"}}}());var ut_modern_media_query = window.matchMedia( "screen and (-webkit-min-device-pixel-ratio:2)");if( ut_modern_media_query.matches ) {
+                        
+                        var $logo = $(".site-logo img");
+                        $logo.attr("src" , retina_logos.sitelogo_retina );
+                                        
+                    
+                    }if( ut_modern_media_query.matches ) {
+                        
+                        var $logo = $(".site-logo img");
+                        $logo.data("altlogo" , retina_logos.alternate_logo_retina );        
+                            
+                      
+                      }$("body").queryLoader2({						
+								showbar: "off",			
+								barColor: "#000000",
+								textColor: "#ffffff",
+								backgroundColor: "#ffffff",
+								barHeight: 2,
+								
+								percentage: true,						
+								completeAnimation: "fade",
+								minimumTime: 500,
+								onComplete : function() {
+								
+									$(".ut-loader-overlay").fadeOut( 600 , "easeInOutExpo" , function() {
+										$(this).remove();
+									});
+									
+								}
+								
+							});
+				$(window).load(function() {
+					
+					function show_slogan() {
+						$(".hero-holder").animate({ opacity : 1 });
+					}
+								
+					var execute_slogan = setTimeout ( show_slogan , 800 );
+					
+				});
+                        $(".cta-btn a").click( function(event) { 
+                    
+                            if(this.hash) {
+                                $.scrollTo( this.hash , 650, { easing: "easeInOutExpo" , offset: -brooklyn_scroll_offset-1 , "axis":"y" } );			
+                                event.preventDefault();				
+                            }
+                            
+                        });				
+                    				
+					/* Header Animation
+					================================================== */		
+					var $header     = $("#header-section"),
+						$logo	    = $(".site-logo img"),
+						logo	    = $logo.attr("src"),
+						logoalt     = $logo.data("altlogo"),
+                        is_open     = false,
+                        has_passed  = false;
+					
+                    var ut_update_header_skin = function() {
+                        
+                        if (($(window).width() > 979) && is_open ) {
+                            
+                            $(".ut-mm-trigger").trigger("click");
+                            
+                            if( has_passed ) {
+                                
+                                $header.attr("class", "ha-header ut-header-light fullwidth ");
+                                
+                            } else {
+                                
+                                $header.attr("class", "ha-header ha-transparent fullwidth");
+                                
+                            }
+                            
+                        }
+                           
+                    };
+                    
+                    var ut_nav_skin_changer = function( direction ) {
+                        
+                        if( direction === "down" && !is_open ) {
+                            
+                            $header.attr("class", "ha-header ut-header-light fullwidth ");
+                            $logo.attr("src" , logoalt );
+                            
+                            has_passed = true;                            
+                            
+                        } else if( direction === "up" && !is_open ) {
+                            
+                            $header.attr("class", "ha-header ha-transparent fullwidth");
+                            $logo.attr("src" , logo );
+                            
+                            has_passed = false;
+                            
+                        }	
+                    
+                   };
+                    
+                   $(".ut-mm-trigger").click(function(event){ 
+                                                
+                        if( $header.hasClass("ha-transparent") && !has_passed ) {
+                            
+                            $header.attr("class", "ha-header fullwidth ut-header-light");
+                            $logo.attr("src" , logoalt );                            
+                                                        
+                        } else if ( $header.hasClass("ut-header-light") && !has_passed ) {
+                            
+                            $header.attr("class", "ha-header fullwidth ha-transparent");
+                            $logo.attr("src" , logo );                            
+                            
+                        }
+                                                                        
+                        event.preventDefault();
+                        
+                    }).toggle(function(){ is_open = true; }, function() { is_open = false; });   
+                                        
+                    $(window).utresize(function(){
+                        ut_update_header_skin();
+                    });
+                                    
+					$( "#main-content" ).waypoint(function(direction) {
+							
+						ut_nav_skin_changer(direction);			
+						
+                        if( direction === "down" ) {
+                            
+                            has_passed = true;                           
+                            
+                        } else if( direction === "up" ) {
+                                                        
+                            has_passed = false;                           
+                            
+                        }	
+                        
+					}, { offset: brooklyn_scroll_offset+1 });$(".parallax-banner").addClass("fixed").each(function() {                
+						$(this).parallax( "50%", 0.6 ); 
+					});$("section").each(function() {
+															
+							var outerHeight = $(this).outerHeight(),
+								offset		= "90%",
+								effect		= $(this).data("effect");
+							
+							if( outerHeight > $(window).height() / 2 ) {
+								offset = "70%";
+							}
+							
+                            $(this).waypoint("destroy");
+							$(this).waypoint( function( direction ) {
+								
+								var $this = $(this);
+												
+								if( direction === "down" && !$(this).hasClass( effect ) ) {
+									
+									$this.find(".section-content").animate( { opacity: 1 } , 1600 );
+									$this.find(".section-header-holder").animate( { opacity: 1 } , 1600 );
+										
+								}
+								
+							} , { offset: offset } );			
+								
+						});
+                        
+                        $(window).load(function(){
+                            $(window).trigger("resize");
+                        });});
+			
+        })(jQuery); 
+		
+				     
+     /* ]]> */
+    </script>     
+    <!---->
+    <!--
+    <link rel="stylesheet" href="/theme_masterplast/static/src/css/website_sale.css" />
+    -->
+    <link rel='stylesheet' id='ut-responsive-grid-css'  href='/theme_florata/static/src/css/ut-responsive-grid.css' />
+    <link rel='stylesheet' id='ut-fontawesome-css'  href='/theme_florata/static/src/css/font-awesome.css' />
+    <link rel='stylesheet' id='ut-animate-css'  href='/theme_florata/static/src/css/ut.animate.css' />
+    <link rel='stylesheet' id='ut-elastislide-css'  href='/theme_florata/static/src/css/ut.elastislide.css' />
+    <link rel='stylesheet' id='ut-fancyrotator-css'  href='/theme_florata/static/src/css/ut.fancyrotator.css' />
+    <link rel='stylesheet' id='ut-shortcodes-css'  href='/theme_florata/static/src/css/ut.shortcode.css' />
+    <link rel='stylesheet' id='ut-twitter-css'  href='/theme_florata/static/src/css/ut.twitter.css' />
+    <link rel='stylesheet' id='contact-form-7-css'  href='/theme_florata/static/src/css/styles491.css' />
+    <link rel='stylesheet' id='rs-plugin-settings-css'  href='/theme_florata/static/src/css/settings.css' />
+
+    <link rel='stylesheet' id='main-font-face-css'  href='/theme_florata/static/src/css/ut-fontface.css' />
+    <link rel='stylesheet' id='ut-flexslider-css'  href='/theme_florata/static/src/css/flexslider.css' />
+    <link rel='stylesheet' id='ut-prettyphoto-css'  href='/theme_florata/static/src/css/prettyPhoto.css' />
+    <link rel='stylesheet' id='ut-superfish-css'  href='/theme_florata/static/src/css/ut-superfish.css' />
+    <link rel='stylesheet' id='unitedthemes-style-css'  href='/theme_florata/static/src/css/style289.css'/>
+    
+    <style type="text/css">::-moz-selection{ background: #864B97; }::selection { background:#864B97; }.ut-language-selector a:hover { color: #864B97; }.ut-custom-icon-link:hoveri {color: #864B97 !important; }.ut-hide-member-details:hover, #ut-blog-navigation a:hover, .light .ut-hide-member-details, .ut-mm-button:hover:before, .ut-mm-trigger.active .ut-mm-button:before, .ut-mobile-menu a:after { color: #864B97; }.ut-header-light .ut-mm-button:before { color: #864B97; }.lead span, .entry-title span,#cancelcommentreplylink,.member-description-style-3 .ut-member-title,.ut-twitter-rotator h2 a, .themecolor{ color: #864B97; }.icons-ul i, .comments-title span, .member-social a:hover, .ut-parallax-quote-title span, .ut-member-style-2 .member-description .ut-member-title { color:#864B97; }.about-icon, .ut-skill-overlay, .ut-dropcap-one, .ut-dropcaptwo,.utmobilemenua:hover, .themecolor-bg, .ut-btn.ut-pt-btn:hover, .ut-btn.dark:hover { background:#864B97; }blockquote, div.wpcf7-validation-errors, .ut-hero-style-5 .herodescription,#navigation ul.sub-menu, .ut-member-style-3 .member-social a:hover { border-color:#864B97; }.cta-section, .ut-btn.theme-btn, .ut-social-link:hover .ut-social-icon, .ut-member-style-2 .ut-so-link:hover { background:#864B97 !important; }.ut-social-title, .ut-service-column h3 span, .ut-rq-icon{ color:#864B97;}.count,.uticonlisti{color:#864B97;}.client-section, .ut-portfolio-pagination.style_two a.selected:hover, .ut-portfolio-pagination.style_two a.selected, .ut-portfolio-pagination.style_two a:hover, .ut-pt-featured{ background:#864B97 !important; }ins, mark, .ut-alert.themecolor, .ut-portfolio-menu.style_two li a:hover, .ut-portfolio-menu.style_two li a.selected, .light .ut-portfolio-menu.style_two li a.selected:hover { background:#864B97; }.footer-content i { color:#864B97; }.copyright a:hover, .footer-content a:hover,.toTop:hover,.utfooterdarka.toTop:hover { color:#864B97; }blockquote span { color:#864B97; }.entry-meta a:hover, #secondary a:hover, .page-template-templatestemplate-archive-php a:hover { color:#864B97; }h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .ut-header-dark .site-logo .logo a:hover { color:#864B97; }a.more-link:hover, .fa-ul li.fa{color:#864B97; }.ut-pt-featured-table .ut-pt-info .fa-li{ color: #864B97 !important; }.button, input[type="submit"], input[type="button"], .dark button,.darkinput[type="submit"], .dark input[type="button"], .light .button, .light input[type="submit"], .light input[type="button"]{background:#864B97;}.imghover{background:rgb(134,75,151);background:rgba(134,75,151,0.85);}.portfoliocaption{background:rgb(134,75,151);background:rgba(134,75,151,0.85);}.teammemberdetails{background:rgba(134,75,151, 0.85 ); }.ut-avatar-overlay { background:rgb(134,75,151); background:rgba(134,75,151, 0.85 ); }.mejs-controls .mejs-time-rail .mejs-timecurrent,.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, .format-link .entry-header a { background:#864B97 !important; }.light .ut-portfolio-menu lia:hover, .light .ut-portfolio-pagination a:hover, .light .ut-nav-tabs li a:hover, .light .ut-accordion-heading a:hover { border-color:#864B97 !important; }.light .ut-portfolio-menu li a:hover, .light .ut-portfolio-pagination a:hover, .ut-portfolio-list li strong, .light .ut-nav-tabs li a:hover, .light .ut-accordion-heading a:hover,.utcustomicona:hover i:first-child { color:#864B97 !important; }.ut-portfolio-gallery-slider .flex-direction-nav a, .ut-gallery-slider .flex-direction-nav a, .ut-rotate-quote-alt .flex-direction-nav a, .ut-rotate-quote .flex-direction-nav a{ background:rgb(134,75,151); background:rgba(134,75,151, 0.85); }.light .ut-bs-wrap .entry-title a:hover, .light .ut-bs-wrap a:hover .entry-title{ color: #864B97; }.ut-rated i { color: #864B97; }.ut-footer-area ul.sidebar a:hover { color: #864B97; }.ut-footer-dark .ut-footer-area.widget_tag_cloud a:hover { color: #864B97!important; }.ut-footer-dark .ut-footer-area .widget_tag_cloud a:hover { border-color: #864B97;}.elastislidewrappernavspan:hover{border-color: #864B97; }.elastislide-wrapper nav span:hover { color: #864B97; }.ut-footer-so li a:hover { border-color: #864B97; }.ut-footer-so li a:hover i { color: #864B97!important; }.ut-pt-wrap.ut-pt-wrap-style-2 .ut-pt-featured-table .ut-pt-header { background:#864B97; }.ut-pt-wrap-style-3 .ut-pt-info ul li, .ut-pt-wrap-style-3 .utptinfoul,.ut-pt-wrap-style-3 .ut-pt-header, .ut-pt-wrap-style-3 .ut-btn.ut-pt-btn, .ut-pt-wrap-style-3 .ut-custom-row, .ut-pt-wrap-style-3 .ut-pt-featured-table .ut-btn { border-color:rgba(134,75,151, 0.1); }.ut-pt-wrap-style-3 .ut-btn { color:#864B97 !important; }.ut-pt-wrap-style-3 .ut-btn { text-shadow: 0 0 40px #864B97, 2px 2px 3px black; }.ut-pt-wrap-style-3 .ut-pt-featured-table .ut-btn { color:#864B97 !important; }.ut-pt-wrap-style-3 .ut-pt-featured-table .ut-btn { text-shadow: 0 0 40px #864B97, 2px 2px 3pxblack;}.ut-pt-wrap-style-3 .ut-pt-featured-table .ut-pt-title { color:#864B97 !important; }.ut-pt-wrap-style-3 .ut-pt-featured-table .ut-pt-title { text-shadow: 0 0 40px #864B97,2px2px 3px black; }.ut-glow {color:#864B97;text-shadow:0 0 40px #864B97, 2px 2px 3px black; }.light .ut-shortcode-video-wrap .ut-video-caption{bordercolor:rgba(134,75,151,1);}.light .ut-shortcode-video-wrap .ut-video-caption i { border-color:rgba(134,75,151, 0.3); }.light .ut-shortcode-video-wrap .ut-video-caption i{color:rgba(134,75,151,0.3);}.light .ut-shortcode-video-wrap .ut-video-caption:hover i { border-color:rgba(134,75,151, 1); }.light .ut-shortcode-video-wrap .ut-video-caption:hover i { color:#864B97 !important; }.light .ut-shortcode-video-wrap .ut-video-caption:hover i { text-shadow: 0 0 40px #864B97, 2px 2px 3px black; }.light .ut-video-loading { color:#864B97 important;}.light .ut-video-loading { text-shadow: 0 0 40px #864B97, 2px 2px 3px black; }.light .ut-video-caption-text { border-color:rgba(134,75,151, 1); }.js #maincontentsection.section-content,.js #main-content section .section-header-holder {opacity:0;}#header-section { padding-top: 15px; }#header-section { padding-bottom: 15px; }#navigation { font-family: "ralewaysemibold", Helvetica, Arial, sans-serif !important; }#navigation li a:hover { color:#FFFFFF; }#navigation .selected, #navigationulli.current_page_parenta.active, #navigation ul li.current-menu-ancestor a.active { color: #864B97; }#navigation ul li a:hover,#navigation ul.sub-menu li a:hover { color:#864B97; }#navigation ul.sub-menu li > a { color: #999999; }#navigation ul li.current-menu-item:not(.current_page_parent) a, #navigation ul li.current_page_item:not(.current_page_parent) a { color:#FFFFFF;}#navigation ul li.current-menu-item:not(.current_page_parent) .sub-menu li a { color: #999999; }.ut-header-dark #navigation li a:hover { color:#864B97; }.utheaderdark#navigation .selected,.ut-header-dark #navigation ul li.current_page_parent a.active, .ut-header-dark #navigation ul li.current-menu-ancestor a.active { color: #864B97; }.ut-header-dark #navigation ul li a:hover,.ut-header-dark #navigation ul.sub-menu li a:hover { color: #864B97; }.ut-header-dark #navigation ul.sub-menu li > a { color: #999999;}.ut-header-dark #navigation ul li.current-menu-item:not(.current_page_parent) a, .ut-header-dark #navigation ul li.current_page_item:not(.current_page_parent) a { color:#864B97; }.ut-header-dark #navigation ul li.current-menu-item:not(.current_page_parent) .sub-menu li a {color:#999999;}.utloaderoverlay{background:#ffffff}.herotitlespan:not(.ut-word-rotator) { color:#864B97 !important; }.hero-title.ut-glow span { text-shadow: 0 0 40px #864B97, 2px 2px 3px black; }body { font-family:ralewayregular,"Helvetica Neue", Helvetica, Arial, sans-serif; }h1 { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }h2 { fontfamily:ralewaysemibold,"HelveticaNeue", Helvetica, Arial, sans-serif; }h3 { font-family: ralewaylight, "Helvetica Neue", Helvetica, Arial, sans-serif; }h4 { font-family:ralewaysemibold,"HelveticaNeue",Helvetica, Arial, sans-serif; }h5 { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }h6 {fontfamily:ralewaysemibold,"HelveticaNeue",Helvetica,Arial, sans-serif; }.hero-title { text-transform: uppercase; }.hero-title { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }.hero{background-repeat:no-repeat !important;background-attachment:inherit !important;background-position:center center !important;background-size: !important;background-image:url("http://35.186.179.129/florata/wp-content/uploads/2017/11/banner.jpg");}#contact-section .parallax-title span span { color:#864B97; }#contact-section{background-repeat:no-repeat !important;background-attachment:scroll !important;background-position:center center !important;background-size:cover !important;background-image:url("http://35.186.179.129/florata/wp-content/uploads/2017/11/contato.png");}#contact-section .parallax-title { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif;}#contact-section .ut-left-footer-area { background: rgb(255,255,255,0); }#contact-section .ut-left-footer-area { background: rgba(255,255,255,0); }#contact-section .ut-right-footer-area{ background: rgb(255,255,255,0); }#contact-section .ut-right-footer-area { background: rgba(255,255,255,0); }#contact-section .parallax-overlay { background: rgb(33,33,33,0.1);}#contact-section .parallax-overlay { background: rgba(33,33,33,0.1); }#contact-section { padding-top:120px; padding-bottom:90px; }#contact-section .ut-offset-anchor {top:-229px; }blockquote { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }.lead, .taxonomy-description { fontfamily:ralewayregular,"HelveticaNeue", Helvetica, Arial, sans-serif; }#ut-loader-logo { background-image: url(http://35.186.179.129/florata/wp-content/uploads/2017/11/logo-florata.png);backgroundposition:center center; background-repeat: no-repeat; }.footer.ut-footer-dark, .ut-footer-dark a.toTop {background: #222222 ; }.footer .footer-content {background:#222222;}.footer.footer-content {padding-top: 30px; }#welcome-to-brooklyn{ padding-top:120px; padding-bottom:0px; }#welcome-to-brooklyn .ut-offset-anchor { top:-229px; #welcometobrooklyn.parallax-header { padding-bottom:30px; }#welcome-to-brooklyn .section-header { padding-bottom:30px; }#welcome-to-brooklyn .parallaxtitle{fontfamily:ralewaylight,"HelveticaNeue", Helvetica, Arial, sans-serif; }#welcome-to-brooklyn .section-title{ font-family: ralewaylight, "Helvetica Neue", Helvetica, Arial, sans-serif; }#welcome-to-brooklyn{background-repeat:no-repeat !important;background-attachment:inherit !important;background-position:left center !important;background-size:cover !important;background-image:url("http://35.186.179.129/florata/wp-content/uploads/2017/11/background-2.png");}#welcome-to-brooklyn .section-content { color: #333333; }#welcome-to-brooklyn .section-content h1 { color: #333333 !important; }#welcome-to-brooklyn .section-content h2 { color: #333333 !important; }#welcome-to-brooklyn .section-content h3 { color: #333333 !important; }#welcome-to-brooklyn .section-content h4 { color: #333333 !important; }#welcome-to-brooklyn .section-content h5 { color: #333333 !important; #welcometobrooklyn.section-content h6 { color: #333333 !important; }#welcome-to-brooklyn .parallax-title { color: #333333; }#welcome-to-brooklyn .section-title { color: #333333; }#welcome-to-brooklyn .lead, #welcome-to-brooklyn .lead p { color: #333333; }#quais-as-vantagens-da-manipulacao{ padding-top:80px; padding-bottom:60px; }#quais-as-vantagens-damanipulacao.ut-offset-anchor { top:-189px; }#quais-as-vantagens-da-manipulacao .parallax-header { padding-bottom:30px; }#quais-as-vantagens-da-manipulacao .section-header { padding-bottom:30px; }#quais-as-vantagens-da-manipulacao .parallax-title{ font-family: ralewaylight, "Helvetica Neue", Helvetica, Arial, sans-serif; }#quais-as-vantagens-damanipulacao.section-title{ font-family: ralewaylight, "Helvetica Neue", Helvetica, Arial, sans-serif; }#quais-as-vantagens-da-manipulacao{background-repeat:repeat !important;background-attachment:inherit !important;background-position:center top !important;background-size: !important;background-image:url("http://35.186.179.129/florata/wp-content/uploads/2017/11/capsulas.png");}#quais-as-vantagens-da-manipulacao .section-content { color: #ffffff; }#quais-as-vantagens-da-manipulacao .section-content h1 { color: #ffffff !important; }#quais-as-vantagens-da-manipulacao .section-content h2 { color: #ffffff !important; }#quais-as-vantagens-da-manipulacao .section-content h3 { color: #ffffff !important; }#quais-as-vantagens-da-manipulacao .section-content h4 { color: #ffffff !important; }#quais-as-vantagens-da-manipulacao .section-content h5 { color: #ffffff!important; }#quais-as-vantagens-da-manipulacao .section-content h6 { color: #ffffff !important; }#quais-as-vantagens-da-manipulacao .parallax-title { color: #ffffff; }#quais-as-vantagens-da-manipulacao .section-title { color: #ffffff; }#quais-as-vantagens-da-manipulacao .lead, #quais-as-vantagens-da-manipulacao .lead p { color: #ffffff; #happyclients.parallax-overlay { padding-top:120px; padding-bottom:100px; }#happy-clients .ut-offset-anchor { top:-109px; }#happy-clients .parallax-header { padding-bottom:30px; }#happy-clients .section-header { padding-bottom:30px; }#happy-clients .parallax-title{ font-family: ralewaylight, "Helvetica Neue", Helvetica, Arial, sans-serif; #happyclients.section-title{ font-family: ralewaylight, "Helvetica Neue", Helvetica, Arial, sans-serif; }#happy-clients{background-repeat:no-repeat !important;background-attachment:fixed !important;background-position:center center !important;background-size:cover !important;background-image:url("http://35.186.179.129/florata/wp-content/uploads/2017/11/mapa.jpg");}#happy-clients .section-content { color: #ffffff; }#happy-clients .section-content h1 { color: #ffffff !important; }#happy-clients .section-content h2 {color:#ffffff !important; }#happy-clients .section-content h3 { color: #ffffff !important; }#happy-clients .section-content h4 { color: #ffffff !important; }#happy-clients .section-content h5 { color: #ffffff !important; }#happy-clients .section-content h6 { color: #ffffff !important; }#happy-clients .parallax-title { color: #ffffff; #happyclients.section-title { color: #ffffff; }#happy-clients .lead, #happy-clients .lead p { color: #ffffff; }#happy-clients .parallax-overlay { background-color: rgb(33,33,33); }#happy-clients .parallax-overlay { background-color: rgba(33,33,33 , 0.1 ); }.parallax-overlay-pattern.style_one { background-image: url(" http://floratamanipulacao.com.br/wp-content/themes/brooklyn-creative-one-page-multipurpose-theme/brooklyn/images/overlay-pattern.png") !important; }.parallax-overlay-pattern.style_two { background-image: url(" http://floratamanipulacao.com.br/wp-content/themes/brooklyn-creative-one-page-multipurpose-theme/brooklyn/images/overlay-pattern2.png") !important; }.tp-caption.brooklyn-title {fon-size:65px;line-height:60px;font-weight:bold;fontfamily:"ralewaysemibold";color:#ffffff;textdecoration:none;backgroundcolor:transparent;textshadow0px1px1pxrgba(0,0,0,0.2);border-width:0px;border-color:rgb(255, 214, 88);border-style:none;}.tp-caption.brooklyn-lead {font-size:30px;line-height:40px;font-weight:normal;font-family:"ralewayregular";color:#ffffff;text-decoration:none;background-color:transparent;padding:0px 0px 0px 0px;text-shadow:0px 1px 1px rgba(0,0,0,0.2);text-align:center;border-width:0px;border-color:rgb(255, 214, 88);border-style:none;}</style><meta name="generator" content="Powered by Slider Revolution 5.0.7 - responsive, Mobile-Friendly SliderPlugin for WordPress with comfortable drag and drop interface." />
+        
   </xpath>
 </template>
     
