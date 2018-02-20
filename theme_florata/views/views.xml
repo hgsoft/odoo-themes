@@ -1,6 +1,190 @@
 <odoo>
     <data>
+        
+        <!---->
+        
+        
+        
+        <!---->
+        
+        <template id="website_navbar" inherit_id="website.layout">
+            <xpath expr="//div" position="inside">
+                <div>
+                    <img data-altlogo="theme_florata/static/src/img/logo-florata.png" src="theme_florata/static/src/img/logo-florata.png" alt="Florata"/>
+                </div>
+            </xpath>
+            <!---->
+            <!---->
+            <xpath expr="//div[@id='footer']" position="replace">
+                <!-- FORCE CLEAN DIV -->
+            </xpath>
+            
+            <xpath expr="//footer//div[@class='container mt16 mb8']" position="replace">
+                <!-- FORCE CLEAN DIV -->
+            </xpath>
+        
+        </template>
+        
+        <!---->
+        
         <template id="theme_florata_footer" inherit_id="website.layout" name="theme_florata_footer">
+            
+            <!---->
+            <!---->
+            <!---->
+    <xpath expr="//header//div" position="attributes">
+        <attribute name="style">position: absolute; left: -999em;</attribute>
+
+    </xpath>
+    
+    <xpath expr="//header//ul[@id='top_menu']" position="inside">
+        <div id="header-section" class="ha-header ha-transparent fullwidth">
+            <div class="ha-header-perspective">
+                <div class="ha-header-front">
+                    <div class="grid-20 tablet-grid-50 mobile-grid-50 push-5">
+                        <div class="site-logo">
+                            <a href="http://floratamanipulacao.com.br/" title="Florata" rel="home">
+                                <img data-altlogo="http://35.186.179.129/florata/wp-content/uploads/2017/11/logo-florata.png" src="http://35.186.179.129/florata/wp-content/uploads/2017/11/logo-florata.png" alt="Florata"/>
+                            </a>
+                        </div>
+                    </div>
+                    <nav id="navigation" class="grid-80 hide-on-tablet hide-on-mobile pull-5">
+                        <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
+                            <li class="ut-home-link">
+                                <a href="#top" class="">Home</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#section-welcome-to-brooklyn" class="selected">Sobre nós</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#section-quais-as-vantagens-da-manipulacao" class="">Quais as vantagens da manipulação?</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#section-happy-clients" class="">Nossas filiais</a>
+                            </li>
+                            <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom">
+                                <a href="#section-contact" class="">Contato</a>
+                            </li>
+                            
+                            <!---->
+                            <!-- Custom Buttons - navbar top -->
+                            <!---->
+                            
+                            <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom">
+                                <a href="http://localhost:8069/shop" class="">Loja</a>
+                            </li>
+                            <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
+                                <a href="http://localhost:8069/my/home" class="">Minha conta</a>
+                            </li>
+                            <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
+                                <a href="http://localhost:8069/web/login" class="">Entrar</a>
+                            </li>
+                            <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
+                                <a href="http://localhost:8069/web/session/logout?redirect=/" class="">Sair</a>
+                            </li>
+                            
+                            <!---->
+                            <!---->
+                            
+                        </ul>
+                    </nav>
+                    <div class="ut-mm-trigger tablet-grid-50 mobile-grid-50 hide-on-desktop">
+                        <button class="ut-mm-button"></button>
+                    </div>
+                    <nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1370px; height: 202px; display: none;">
+                        <div class="ut-scroll-pane" style="width: 1367px; height: 202px;">
+                            <ul id="ut-mobile-menu" class="ut-mobile-menu">
+                                <li class="ut-home-link">
+                                    <a href="#top" class="selected">Home</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                    <a href="#section-welcome-to-brooklyn" class="">Sobre nós</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                    <a href="#section-quais-as-vantagens-da-manipulacao" class="">Quais as vantagens da manipulação?</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                    <a href="#section-happy-clients" class="">Nossas filiais</a>
+                                </li>
+                                <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
+                                    <a href="#section-contact" class="">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </xpath>
+    <!---->
+
+            <!---->
+            <!---->
+            <!---->
+            
+            <!---->
+            <!--
+            <xpath expr="//footer" position="inside">
+                <header id="header-section" class="ha-header ha-transparent fullwidth">
+                    <div class="ha-header-perspective">
+                        <div class="ha-header-front">
+                            <div class="grid-20 tablet-grid-50 mobile-grid-50 push-5">
+                                <div class="site-logo">
+                                    <a href="http://floratamanipulacao.com.br/" title="Florata" rel="home">
+                                        <img data-altlogo="theme_florata/static/src/img/logo-florata.png"
+                                    src="theme_florata/static/src/img/logo-florata.png" alt="Florata"/></a>
+                                </div>
+                            </div>    
+                            <nav id="navigation" class="grid-80 hide-on-tablet hide-on-mobile pull-5">
+                                <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
+                                    <li class="ut-home-link">
+                                        <a href="#top" class="">Home</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                        <a href="http://floratamanipulacao.com.br/#section-welcome-to-brooklyn" class="selected">Sobre nós</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                        <a href="http://floratamanipulacao.com.br/#section-quais-as-vantagens-da-manipulacao" class="">Quais as vantagens da manipulação?</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                        <a href="http://floratamanipulacao.com.br/#section-happy-clients" class="">Nossas filiais</a>
+                                    </li>
+                                    <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom ">
+                                        <a href="#section-contact" class="">Contato</a>
+                                    </li>
+                                </ul>
+                            </nav>                    
+                            <div class="ut-mm-trigger tablet-grid-50 mobile-grid-50 hide-on-desktop">
+                                <button class="ut-mm-button"></button>
+                            </div>
+                            <nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1370px; height: 219px; display: none;">
+                                <div class="ut-scroll-pane" style="width: 1367px; height: 219px;">
+                                    <ul id="ut-mobile-menu" class="ut-mobile-menu">
+                                        <li class="ut-home-link">
+                                            <a href="#top" class="selected">Home</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                            <a href="http://floratamanipulacao.com.br/#section-welcome-to-brooklyn" class="">Sobre nós</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                            <a href="http://floratamanipulacao.com.br/#section-quais-as-vantagens-da-manipulacao" class="">Quais as vantagens da manipulação?</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                            <a href="http://floratamanipulacao.com.br/#section-happy-clients" class="">Nossas filiais</a>
+                                        </li>
+                                        <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
+                                            <a href="#section-contact" class="">Contato</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>                                        
+                        </div>
+                    </div>
+                </header>
+            </xpath>
+            -->
+            <!---->
+            
             <xpath expr="//footer" position="inside">
                 <section id="welcome-to-brooklyn" data-effect="fadeIn" data-width="centered" class="page-id-25 entry-content normal-background  dark   ">
                     <a class="ut-offset-anchor" id="section-welcome-to-brooklyn" name="section-welcome-to-brooklyn">welcome-to-brooklyn</a>
@@ -119,8 +303,16 @@
             </xpath>
             <xpath expr="//footer" position="inside">
                 <section id="happy-clients" data-effect="fadeIn" data-width="centered" class="page-id-80 entry-content normal-background  light   ">
+                
+                    <!--
+                <section style="height: 10000px; width: 10000px;" id="happy-clients" data-effect="fadeIn" data-width="centered" class="page-id-80 entry-content normal-background  light   ">
+                -->
                     <a class="ut-offset-anchor" id="section-happy-clients" name="section-happy-clients">happy-clients</a>
-                    <div class="parallax-overlay parallax-overlay-pattern style_one">
+                    <!--
+                    style="height: 100%; width: 100%;"
+                    1350×451
+                    -->
+                    <div style="height: 451px; width: 1350px;" class="parallax-overlay parallax-overlay-pattern style_one">
                         <div class="grid-container section-header-holder" style="opacity: 1;">
                             <!-- section header -->
                             <div class="grid-100 mobile-grid-100 tablet-grid-100">
@@ -227,19 +419,23 @@
                 </section>
             </xpath>
            <xpath expr="//footer" position="inside">
-                <footer class="footer ut-footer-dark">
+               <!--
+               <footer style="height: 112px; width: 1350px;" class="footer ut-footer-dark">
+               <div style="height: 82px; width: 1350px;" class="footer-content">
+                -->
+               <footer class="footer ut-footer-dark">
                     <a href="#top" class="toTop">
                         <i class="fa fa-angle-double-up"></i>
                     </a>
+                    <!---->
+                    <div style="height: 30px;">
+                    </div>
+                    <!---->
                     <div class="footer-content">
                         <div class="grid-container">
                             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
-                        
-                            Copyright © Florata Manipulação                        
-                                                    
-                        
-                                
-                        </div>
+                                Copyright © Florata Manipulação                        
+                            </div>
                         </div>
                     </div>
                 </footer>
