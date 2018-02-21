@@ -1,0 +1,30 @@
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color:#555;
+}
+
+.NavigationButton {
+ position: fixed;
+ top: 5%;
+ right: 5%;
+ z-index: 99999;
+ font-family: neuzeit-grotesk, sans-serif;
+ font-weight: 700;
+ color: inherit;
+}
+
+.menu_white {
+ color: #fff;
+}
+
+.menu_black {
+ color: #000;
+}
+
+#content a {
+    color: white;
+}
