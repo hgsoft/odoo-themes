@@ -1,9 +1,49 @@
 <odoo>
     <data>
-        
+
         <!---->
         
+        <template id="theme_florata_portal_account_details" inherit_id="website_portal.details" name="Theme Florata - Portal Account Details">
         
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 13.0%;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>
+            
+        <!---->
+        
+        <template id="theme_florata_portal_account_orders" inherit_id="website_portal_sale.orders_followup" name="Theme Florata - Portal Account Orders">
+        
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 14.0%;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>
+            
+        <!---->
+            
+        <template id="theme_florata_portal_layout" inherit_id="website_portal.portal_layout" name="Theme Florata - Portal Layout">
+            
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 16.0%;">
+                            
+                </div>
+                
+            </xpath>
+            
+        </template>
         
         <!---->
         
