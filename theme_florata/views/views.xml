@@ -28,196 +28,148 @@
         </template>
         
         <!---->
+        <!---->
         
-        <template id="theme_florata_footer" inherit_id="website.layout" name="theme_florata_footer">
+        <template id="theme_florata_website_navbar" inherit_id="website.layout" name="Theme Florata - Website Navbar">
+        
+        <xpath expr="//div[1]" position="attributes">
             
-            <!---->
-            <!---->
-            <!---->
-    <xpath expr="//header//div" position="attributes">
-        <attribute name="style">position: absolute; left: -999em;</attribute>
-
-    </xpath>
+            <attribute name="style">
+                background-image: url(/theme_florata/static/src/img/fundo.jpg); 
+            </attribute>
+            
+        </xpath>
+        
+        <!--
+            <xpath expr="//div" position="inside">
+            
+            <style type="text/css">
+                main {
+                background: none;
+                background-image: url("/theme_florata/static/src/img/fundo.jpg");
+                background-size: cover;
+                }
+            </style>
+        </xpath>
+        -->
+            
+        <!--
+        <xpath expr="//nav[id='oe_main_menu_navbar']" position="attributes">
+            <attribute name="style">z-index:10;</attribute>
+        </xpath>
+        -->
+            
+        <xpath expr="//header//div" position="attributes">
+            <attribute name="style">position: absolute; left: -999em;</attribute>
+        </xpath>
     
-    <xpath expr="//header//ul[@id='top_menu']" position="inside">
-        <section id="top">
-            <div id="header-section" class="ha-header ha-transparent fullwidth navbar-fixed-top">
-                <div class="ha-header-perspective">
-                    <div class="ha-header-front">
-                        <div class="grid-20 tablet-grid-50 mobile-grid-50 push-5">
-                            <div class="site-logo">
-                                <a href="http://floratamanipulacao.com.br/" title="Florata" rel="home">
-                                    <img data-altlogo="/theme_florata/static/src/img/logo-florata.png" src="/theme_florata/static/src/img/logo-florata.png" alt="Florata"/>
-                                </a>
-                            </div>
-                        </div>
-                        <nav id="navigation" class="grid-80 hide-on-tablet hide-on-mobile pull-5">
-                            <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
-                                <li class="ut-home-link">
-                                    <a href="#top" class="scroll nav-link">Home</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#section-welcome-to-brooklyn" class="selected scroll nav-link">Sobre nós</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll nav-link">Quais as vantagens da manipulação?</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#section-happy-clients" class="scroll nav-link">Nossas filiais</a>
-                                </li>
-                                <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom">
-                                    <a href="#section-contact" class="scroll nav-link">Contato</a>
-                                </li>
-                                
-                                <!---->
-                                <!-- Custom Buttons - navbar top -->
-                                <!---->
-                                
-                                <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
-                                    <li>
-                                        <a style="background-color: transparent; border: transparent; border: none;"
-                                        href="http://localhost:8069/web/login"
-                                        title="Edit Top Menu" class="nav-link">Entrar</a>
-                                    </li>
-                                </li>
-                                
-                                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                    <li>
-                                        <a class="nav-link" style="background-color: transparent; border: transparent; border: none;"
-                                        href="http://localhost:8069/shop">Pedidos de Parceiros</a>
-                                    </li>
-                                </li>                            
-                                        
-                                        
-                                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                    
-                                    <a style="background-color: transparent; border: transparent; border: none;" 
-                                    class="dropdown-toggle" href="#" data-toggle="dropdown">
-                                        <b>
-                                            <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
-                                            <span class="caret"/>
-                                        </b>
-                                    </a>
-                                    
-                                    <ul style="background-color: transparent; border: transparent; border: none;"
-                                    class="dropdown-menu oe_content_menu" role="menu">
-                                        <li>
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;"
-                                            href="http://localhost:8069/my/home"
-                                            title="Edit Top Menu">Minha Conta</a>
-                                            
-                                        <a style="background-color: transparent; border: transparent; border: none; color: black;"
-                                            href="http://localhost:8069/web/session/logout?redirect=/"
-                                            title="Edit Top Menu">Sair</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                
-                                <!---->
-                                <!---->
-                                
-                            </ul>
-                        </nav>
-                        <div class="ut-mm-trigger tablet-grid-50 mobile-grid-50 hide-on-desktop">
-                            <button class="ut-mm-button"></button>
-                        </div>
-                        <nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1370px; height: 202px; display: none;">
-                            <div class="ut-scroll-pane" style="width: 1367px; height: 202px;">
-                                <ul id="ut-mobile-menu" class="ut-mobile-menu">
-                                    <li class="ut-home-link">
-                                        <a href="#top" class="selected scroll nav-link">Home</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                        <a href="#section-welcome-to-brooklyn" class="scroll nav-link">Sobre nós</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                        <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll nav-link">Quais as vantagens da manipulação?</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                        <a href="#section-happy-clients" class="scroll nav-link">Nossas filiais</a>
-                                    </li>
-                                    <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
-                                        <a href="#section-contact" class="scroll nav-link">Contato</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </xpath>
-    <!---->
-
-            <!---->
-            <!---->
-            <!---->
-            
-            <!---->
-            <!--
-            <xpath expr="//footer" position="inside">
-                <header id="header-section" class="ha-header ha-transparent fullwidth">
+        <xpath expr="//header//ul[@id='top_menu']" position="inside">
+            <section id="top">
+                <!--
+                <div style="z-index:9;" id="header-section" class="ha-header ha-transparent fullwidth navbar-fixed-top">
+                -->
+                <div id="header-section" class="ha-header ha-transparent fullwidth navbar-fixed-top">
                     <div class="ha-header-perspective">
                         <div class="ha-header-front">
                             <div class="grid-20 tablet-grid-50 mobile-grid-50 push-5">
                                 <div class="site-logo">
                                     <a href="http://floratamanipulacao.com.br/" title="Florata" rel="home">
-                                        <img data-altlogo="theme_florata/static/src/img/logo-florata.png"
-                                    src="theme_florata/static/src/img/logo-florata.png" alt="Florata"/></a>
+                                        <img data-altlogo="/theme_florata/static/src/img/logo-florata.png" src="/theme_florata/static/src/img/logo-florata.png" alt="Florata"/>
+                                    </a>
                                 </div>
-                            </div>    
+                            </div>
                             <nav id="navigation" class="grid-80 hide-on-tablet hide-on-mobile pull-5">
                                 <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
                                     <li class="ut-home-link">
-                                        <a href="#top" class="">Home</a>
+                                        <a href="#top" class="scroll nav-link">Home</a>
                                     </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                        <a href="http://floratamanipulacao.com.br/#section-welcome-to-brooklyn" class="selected">Sobre nós</a>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="#section-welcome-to-brooklyn" class="selected scroll nav-link">Sobre nós</a>
                                     </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                        <a href="http://floratamanipulacao.com.br/#section-quais-as-vantagens-da-manipulacao" class="">Quais as vantagens da manipulação?</a>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll nav-link">Quais as vantagens da manipulação?</a>
                                     </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                        <a href="http://floratamanipulacao.com.br/#section-happy-clients" class="">Nossas filiais</a>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="#section-happy-clients" class="scroll nav-link">Nossas filiais</a>
                                     </li>
-                                    <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom ">
-                                        <a href="#section-contact" class="">Contato</a>
+                                    <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom">
+                                        <a href="#section-contact" class="scroll nav-link">Contato</a>
+                                    </li>
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+                                        <li>
+                                            <a style="background-color: transparent; border: transparent; border: none;"
+                                            href="http://localhost:8069/web/login"
+                                            title="Edit Top Menu" class="nav-link">Entrar</a>
+                                        </li>
+                                    </li>
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                        <li>
+                                            <a class="nav-link" style="background-color: transparent; border: transparent; border: none;"
+                                            href="http://localhost:8069/shop">Pedidos de Parceiros</a>
+                                        </li>
+                                    </li>                            
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                        <a style="background-color: transparent; border: transparent; border: none;" 
+                                        class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <b>
+                                                <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
+                                                <span class="caret"/>
+                                            </b>
+                                        </a>
+                                        <ul style="background-color: transparent; border: transparent; border: none;"
+                                        class="dropdown-menu oe_content_menu" role="menu">
+                                            <li>
+                                                <a style="background-color: transparent; border: transparent; border: none; color: black;"
+                                                href="http://localhost:8069/my/home"
+                                                title="Edit Top Menu">Minha Conta</a>
+                                                
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;"
+                                                href="http://localhost:8069/web/session/logout?redirect=/"
+                                                title="Edit Top Menu">Sair</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
-                            </nav>                    
+                            </nav>
                             <div class="ut-mm-trigger tablet-grid-50 mobile-grid-50 hide-on-desktop">
                                 <button class="ut-mm-button"></button>
                             </div>
-                            <nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1370px; height: 219px; display: none;">
-                                <div class="ut-scroll-pane" style="width: 1367px; height: 219px;">
+                            <nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1370px; height: 202px; display: none;">
+                                <div class="ut-scroll-pane" style="width: 1367px; height: 202px;">
                                     <ul id="ut-mobile-menu" class="ut-mobile-menu">
                                         <li class="ut-home-link">
-                                            <a href="#top" class="selected">Home</a>
+                                            <a href="#top" class="selected scroll nav-link">Home</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="http://floratamanipulacao.com.br/#section-welcome-to-brooklyn" class="">Sobre nós</a>
+                                            <a href="#section-welcome-to-brooklyn" class="scroll nav-link">Sobre nós</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="http://floratamanipulacao.com.br/#section-quais-as-vantagens-da-manipulacao" class="">Quais as vantagens da manipulação?</a>
+                                            <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll nav-link">Quais as vantagens da manipulação?</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="http://floratamanipulacao.com.br/#section-happy-clients" class="">Nossas filiais</a>
+                                            <a href="#section-happy-clients" class="scroll nav-link">Nossas filiais</a>
                                         </li>
                                         <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
-                                            <a href="#section-contact" class="">Contato</a>
+                                            <a href="#section-contact" class="scroll nav-link">Contato</a>
                                         </li>
                                     </ul>
                                 </div>
-                            </nav>                                        
+                            </nav>
                         </div>
                     </div>
-                </header>
-            </xpath>
-            -->
-            <!---->
+                </div>
+            </section>
+        </xpath>
+        
+        <!---->
+        <!---->
+        
+        </template>
+        
+        <template id="theme_florata_homepage" inherit_id="website.homepage" name="Theme Florata - Homepage">
             
-            <xpath expr="//footer" position="inside">
-                <section id="welcome-to-brooklyn" data-effect="fadeIn" data-width="centered" class="page-id-25 entry-content normal-background  dark   ">
+            <xpath expr="//div[@id='wrap']" position="inside">
+                <section style="background-image: url(/theme_florata/static/src/img/background-2b.jpg);" id="welcome-to-brooklyn" data-effect="fadeIn" data-width="centered" class="page-id-25 entry-content normal-background  dark   ">
                     <a class="ut-offset-anchor" id="section-welcome-to-brooklyn" name="section-welcome-to-brooklyn">welcome-to-brooklyn</a>
                     <div class="grid-container section-header-holder" style="opacity: 1;">
                         <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
@@ -231,50 +183,51 @@
                             </header>
                         </div>
                     </div>
-                    <div class="clear"></div>
+                    <div class="clear"/>
                     <div class="grid-container section-content" style="opacity: 1;">
                         <div class="grid-100 mobile-grid-100 tablet-grid-100">
-                            <p>&#160;</p>
-                            <p>&#160;</p>
-                            <p style="text-align: center;"></p>
+                            <p> </p>
+                            <p> </p>
+                            <p style="text-align: center;"/>
                             <div class="ut-one-fourth  ">
                                 <div style="text-align:center; ">
                                     <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/derma.png"/>
                                 </div>
-                                <p>&#160;</p>
+                                <p> </p>
                                 <p style="text-align: center;">FÓRMULAS DERMATOLÓGICAS</p>
                             </div>
                             <div class="ut-one-fourth  ">
                                 <div style="text-align:center; ">
                                     <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/fito.png"/>
                                 </div>
-                                <p>&#160;</p>
+                                <p> </p>
                                 <p style="text-align: center;">FITOTERÁPICOS E NUTRACÊUTICOS</p>
                             </div>
                             <div class="ut-one-fourth  ">
                                 <div style="text-align:center; ">
                                     <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/capsula.png"/>
                                 </div>
-                                <p>&#160;</p>
+                                <p> </p>
                                 <p style="text-align: center;">MEDICAMENTOS ALOPÁTICOS</p>
                             </div>
                             <div class="ut-one-fourth ut-column-last  ">
                                 <div style="text-align:center; ">
                                     <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/homeo.png"/>
                                 </div>
-                                <p>&#160;</p>
+                                <p> </p>
                                 <p style="text-align: center;">FLORAIS E HOMEOPATIAS</p>
                             </div>
-                            <div class="clear"></div>
-                            <p>&#160;</p>
-                            <p>&#160;</p>
-                            <div class="brookly-hatom-data" style="display:none;visibility:hidden;"></div>
+                            <div class="clear"/>
+                            <p> </p>
+                            <p> </p>
+                            <div class="brookly-hatom-data" style="display:none;visibility:hidden;"/>
                         </div>
                     </div>
-                    <div class="ut-scroll-up-waypoint" data-section="section-welcome-to-brooklyn"></div>
+                    <div class="ut-scroll-up-waypoint" data-section="section-welcome-to-brooklyn"/>
                 </section>
             </xpath>
-            <xpath expr="//footer" position="inside">
+            
+            <xpath expr="//div[@id='wrap']" position="inside">
                 <section id="quais-as-vantagens-da-manipulacao" data-effect="fadeIn" data-width="centered" class="page-id-2704 entry-content normal-background  dark   ">
                     <a class="ut-offset-anchor" id="section-quais-as-vantagens-da-manipulacao" name="section-quais-as-vantagens-da-manipulacao">quais-as-vantagens-da-manipulacao</a>
                     <div class="grid-container section-header-holder" style="opacity: 1;">
@@ -286,66 +239,58 @@
                             </header>
                         </div>
                     </div>
-                    <div class="clear"></div>
+                    <div class="clear"/>
                     <div class="grid-container section-content" style="opacity: 1;">
                         <div class="grid-100 mobile-grid-100 tablet-grid-100">
-                            <p style="text-align: center;"></p>
+                            <p style="text-align: center;"/>
                             <div data-effect="bounceIn" class="ut-one-fifth  animated bounceIn">
                                 <span class="aligncenter ut-custom-icon">
-                                    <i class="fa fa-money fa-5x" style="color:#ffffff"></i>
+                                    <i class="fa fa-money fa-5x" style="color:#ffffff"/>
                                 </span>
-                                <p>&#160;</p>
+                                <p> </p>
                                 <h3 style="text-align: center;">Seus medicamentos são manipulados nas dosagens e quantidades exatas prescritas pelo médico, evitando desperdícios e trazendo economia para o seu bolso.</h3>
                             </div>
                             <div data-effect="bounceIn" class="ut-one-fifth  animated bounceIn">
                                 <span class="aligncenter ut-custom-icon">
-                                    <i class="fa fa-flask fa-5x" style="color:#ffffff"></i>
+                                    <i class="fa fa-flask fa-5x" style="color:#ffffff"/>
                                 </span>
-                                <p>&#160;</p>
+                                <p> </p>
                                 <h3 style="text-align: center;">Com a manipulação é possível associar mais de um medicamento em uma mesma cápsula, caso não existam incompatibilidades farmacológicas. Essa associação diminui o número de tomadas diárias e facilita a adesão ao tratamento.</h3>
                             </div>
                             <div data-effect="bounceIn" class="ut-one-fifth  animated bounceIn">
                                 <span class="aligncenter ut-custom-icon">
-                                    <i class="fa fa-leaf fa-5x" style="color:#ffffff"></i>
+                                    <i class="fa fa-leaf fa-5x" style="color:#ffffff"/>
                                 </span>
-                                <p>&#160;</p>
+                                <p> </p>
                                 <h3 style="text-align: center;">Alguns tratamentos requerem medicamentos e dosagens que não se encontram no mercado e caso a farmácia de manipulação tenha a matéria-prima, ela poderá atender à prescrição, manipulando o produto. </h3>
                             </div>
                             <div data-effect="bounceIn" class="ut-one-fifth  animated bounceIn">
                                 <span class="aligncenter ut-custom-icon">
-                                    <i class="fa fa-tint fa-5x" style="color:#ffffff"></i>
+                                    <i class="fa fa-tint fa-5x" style="color:#ffffff"/>
                                 </span>
-                                <p>&#160;</p>
+                                <p> </p>
                                 <h3 style="text-align: center;">Se você não gosta de tomar medicamentos em forma de comprimidos e cápsulas, por exemplo, é possível fazê-los na forma de saches solúveis, gotas e muitas vezes até mesmo na forma de balas, tabletes sublinguais e bombons de chocolate!</h3>
                             </div>
                             <div data-effect="bounceIn" class="ut-one-fifth ut-column-last  animated bounceIn">
                                 <span class="aligncenter ut-custom-icon">
-                                    <i class="fa fa-paint-brush fa-5x" style="color:#ffffff"></i>
+                                    <i class="fa fa-paint-brush fa-5x" style="color:#ffffff"/>
                                 </span>
-                                <p>&#160;</p>
+                                <p> </p>
                                 <h3 style="text-align: center;">Você pode manipular os seus cosméticos com a essência e a cor de sua preferência. </h3>
                             </div>
-                            <div class="clear"></div>
-                            <div class="brookly-hatom-data" style="display:none;visibility:hidden;"></div>
+                            <div class="clear"/>
+                            <div class="brookly-hatom-data" style="display:none;visibility:hidden;"/>
                         </div>
                     </div>
-                    <div class="ut-scroll-up-waypoint" data-section="section-quais-as-vantagens-da-manipulacao"></div>
+                    <div class="ut-scroll-up-waypoint" data-section="section-quais-as-vantagens-da-manipulacao"/>
                 </section>
             </xpath>
-            <xpath expr="//footer" position="inside">
+            
+            <xpath expr="//div[@id='wrap']" position="inside">
                 <section id="happy-clients" data-effect="fadeIn" data-width="centered" class="page-id-80 entry-content normal-background  light   ">
-                
-                    <!--
-                <section style="height: 10000px; width: 10000px;" id="happy-clients" data-effect="fadeIn" data-width="centered" class="page-id-80 entry-content normal-background  light   ">
-                -->
                     <a class="ut-offset-anchor" id="section-happy-clients" name="section-happy-clients">happy-clients</a>
-                    <!--
-                    style="height: 100%; width: 100%;"
-                    1350×451
-                    -->
                     <div style="height: 451px; width: 1350px;" class="parallax-overlay parallax-overlay-pattern style_one">
                         <div class="grid-container section-header-holder" style="opacity: 1;">
-                            <!-- section header -->
                             <div class="grid-100 mobile-grid-100 tablet-grid-100">
                                 <header class="parallax-header pt-style-7 ">
                                     <h2 style="padding: 10% 0cm 0cm 0cm;" class="parallax-title ">
@@ -354,17 +299,17 @@
                                 </header>
                             </div>
                         </div>
-                        <div class="clear"></div>
+                        <div class="clear"/>
                         <div class="grid-container section-content" style="opacity: 1;">
                             <div class="grid-100 mobile-grid-100 tablet-grid-100">
                                 <p style="text-align: center;">
-                                    <span style="color: #ffffff;"></span>
+                                    <span style="color: #ffffff;"/>
                                 </p>
                                 <div data-effect="slideInLeft" class="ut-one-half  animated slideInLeft">
                                     <span class="aligncenter ut-custom-icon">
-                                        <i class="fa fa-map-marker fa-5x" style="color:#ffffff"></i>
+                                        <i class="fa fa-map-marker fa-5x" style="color:#ffffff"/>
                                     </span>
-                                    <p></p>
+                                    <p/>
                                     <p style="text-align: center;">
                                         <span style="color: #ffffff;">Terceira Avenida, 1215 – Centro,</span>
                                     </p>
@@ -379,9 +324,9 @@
                                 </div>
                                 <div data-effect="slideInRight" class="ut-one-half ut-column-last  animated slideInRight">
                                     <span class="aligncenter ut-custom-icon">
-                                        <i class="fa fa-map-marker fa-5x" style="color:#ffffff"></i>
+                                        <i class="fa fa-map-marker fa-5x" style="color:#ffffff"/>
                                     </span>
-                                    <p></p>
+                                    <p/>
                                     <p style="text-align: center;">
                                         <span style="color: #ffffff;">Heitor Liberato, 1550 – São João,</span>
                                     </p>
@@ -394,19 +339,20 @@
                                         </span>
                                     </p>
                                 </div>
-                                <div class="clear"></div>
-                                <p></p>
-                                <div class="brookly-hatom-data" style="display:none;visibility:hidden;"></div>
+                                <div class="clear"/>
+                                <p/>
+                                <div class="brookly-hatom-data" style="display:none;visibility:hidden;"/>
                             </div>
                         </div>
-                        <div class="clear"></div>
+                        <div class="clear"/>
                     </div>
-                    <div class="ut-scroll-up-waypoint" data-section="section-happy-clients"></div>
+                    <div class="ut-scroll-up-waypoint" data-section="section-happy-clients"/>
                 </section>
             </xpath>
-            <xpath expr="//footer" position="inside">
+            
+            <xpath expr="//div[@id='wrap']" position="inside">
                 <section id="contact-section" data-effect="fadeIn" class="animated contact-section  light  ">
-                    <a class="ut-offset-anchor" id="section-contact"></a>
+                    <a class="ut-offset-anchor" id="section-contact"/>
                     <div class="grid-container parallax-content">
                         <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                             <header class="parallax-header pt-style-7">
@@ -415,19 +361,19 @@
                                 </h2>
                             </header>
                         </div>
-                        <div class="clear"></div>
+                        <div class="clear"/>
                     </div>
                     <div class="grid-container section-content" style="opacity: 1;">
                         <div class="grid-100 mobile-grid-100 tablet-grid-100 grid-parent">
                             <div class="contact-wrap">
                                 <div class="grid-100 mobile-grid-100 tablet-grid-100">
                                     <div class="ut-left-footer-area clearfix">
-                                        <p></p>
+                                        <p/>
                                         <ul class="ut-social-network ">
                                             <li class="grid-25 tablet-grid-25 mobile-grid-100  prefix-25 tablet-prefix-25 ">
                                                 <a target="_blank" href="https://www.facebook.com/floratamanipulacaooficial/" class="ut-social-link">
                                                     <span class="ut-social-icon">
-                                                        <i class="fa fa-facebook fa-4x"></i>
+                                                        <i class="fa fa-facebook fa-4x"/>
                                                     </span>
                                                     <h3 class="ut-social-title">Facebook</h3>
                                                 </a>
@@ -435,13 +381,13 @@
                                             <li class="grid-25 tablet-grid-25 mobile-grid-100   suffix-25 tablet-suffix-25">
                                                 <a target="_blank" href="https://www.instagram.com/floratamanipulacaooficial/" class="ut-social-link">
                                                     <span class="ut-social-icon">
-                                                        <i class="fa fa-instagram fa-4x"></i>
+                                                        <i class="fa fa-instagram fa-4x"/>
                                                     </span>
                                                     <h3 class="ut-social-title">Instagram</h3>
                                                 </a>
                                             </li>
                                         </ul>
-                                        <p></p>
+                                        <p/>
                                     </div>
                                 </div>
                             </div>
@@ -449,19 +395,14 @@
                     </div>
                 </section>
             </xpath>
-           <xpath expr="//footer" position="inside">
-               <!--
-               <footer style="height: 112px; width: 1350px;" class="footer ut-footer-dark">
-               <div style="height: 82px; width: 1350px;" class="footer-content">
-                -->
-               <footer class="footer ut-footer-dark">
+            
+            <xpath expr="//div[@id='wrap']" position="inside">
+                <footer class="footer ut-footer-dark">
                     <a href="#top" class="scroll toTop">
-                        <i class="fa fa-angle-double-up"></i>
+                        <i class="fa fa-angle-double-up"/>
                     </a>
-                    <!---->
                     <div style="height: 30px;">
                     </div>
-                    <!---->
                     <div class="footer-content">
                         <div class="grid-container">
                             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
@@ -471,17 +412,14 @@
                     </div>
                 </footer>
             </xpath>
+            
         </template>
         
-        <template id="theme_florata-login" inherit_id="web.login" name="theme_florata">
-            <!--
-            <xpath expr="//form" position="attributes">
-                <attribute name="style">background-color: #333; background-image: url(/theme_florata/static/src/img/banner.jpg); background-size: 100% 100%;</attribute>
+        <template id="theme_florata_login" inherit_id="web.login" name="Theme Florata - Login">
+            <xpath expr="//form" position="before">
+                <div style="background:#d2c1d8; height: 95px;"></div>
             </xpath>
-            -->
         </template>
-        
-        <!---->
         
         <template id="theme_florata_shop_background_fix" inherit_id="website_sale.products" name="theme_florata_shop_background_fix">
         
