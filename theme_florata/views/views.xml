@@ -7,12 +7,14 @@
         
         <!---->
         
-        <template id="website_navbar" inherit_id="website.layout">
+        <template id="website_navbar" inherit_id="website.layout" name="Theme Florata logo">
+            <!--
             <xpath expr="//div" position="inside">
                 <div>
                     <img data-altlogo="theme_florata/static/src/img/logo-florata.png" src="theme_florata/static/src/img/logo-florata.png" alt="Florata"/>
                 </div>
             </xpath>
+            -->
             <!---->
             <!---->
             <xpath expr="//div[@id='footer']" position="replace">
@@ -51,26 +53,20 @@
                         </div>
                         <nav id="navigation" class="grid-80 hide-on-tablet hide-on-mobile pull-5">
                             <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
-                                
-                                <div id="content" class="NavigationButton menu_white">
-                                  MENU
-                                        <a href="#top" class="scroll">HomeTest</a>   
-                                </div>
-                                
                                 <li class="ut-home-link">
                                     <a href="#top" class="scroll nav-link">Home</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#section-welcome-to-brooklyn" class="selected scroll">Sobre nós</a>
+                                    <a href="#section-welcome-to-brooklyn" class="selected scroll nav-link">Sobre nós</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll">Quais as vantagens da manipulação?</a>
+                                    <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll nav-link">Quais as vantagens da manipulação?</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#section-happy-clients" class="scroll">Nossas filiais</a>
+                                    <a href="#section-happy-clients" class="scroll nav-link">Nossas filiais</a>
                                 </li>
                                 <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom">
-                                    <a href="#section-contact" class="scroll">Contato</a>
+                                    <a href="#section-contact" class="scroll nav-link">Contato</a>
                                 </li>
                                 
                                 <!---->
@@ -81,15 +77,14 @@
                                     <li>
                                         <a style="background-color: transparent; border: transparent; border: none;"
                                         href="http://localhost:8069/web/login"
-                                        title="Edit Top Menu">Entrar</a>
+                                        title="Edit Top Menu" class="nav-link">Entrar</a>
                                     </li>
                                 </li>
                                 
                                 <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                                     <li>
-                                        <a style="background-color: transparent; border: transparent; border: none;"
-                                        href="http://localhost:8069/shop"
-                                        title="Edit Top Menu">Pedidos de Parceiros</a>
+                                        <a class="nav-link" style="background-color: transparent; border: transparent; border: none;"
+                                        href="http://localhost:8069/shop">Pedidos de Parceiros</a>
                                     </li>
                                 </li>                            
                                         
@@ -107,11 +102,11 @@
                                     <ul style="background-color: transparent; border: transparent; border: none;"
                                     class="dropdown-menu oe_content_menu" role="menu">
                                         <li>
-                                            <a style="background-color: transparent; border: transparent; border: none;"
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;"
                                             href="http://localhost:8069/my/home"
                                             title="Edit Top Menu">Minha Conta</a>
                                             
-                                        <a style="background-color: transparent; border: transparent; border: none;"
+                                        <a style="background-color: transparent; border: transparent; border: none; color: black;"
                                             href="http://localhost:8069/web/session/logout?redirect=/"
                                             title="Edit Top Menu">Sair</a>
                                         </li>
@@ -130,19 +125,19 @@
                             <div class="ut-scroll-pane" style="width: 1367px; height: 202px;">
                                 <ul id="ut-mobile-menu" class="ut-mobile-menu">
                                     <li class="ut-home-link">
-                                        <a href="#top" class="selected scroll">Home</a>
+                                        <a href="#top" class="selected scroll nav-link">Home</a>
                                     </li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                        <a href="#section-welcome-to-brooklyn" class="scroll">Sobre nós</a>
+                                        <a href="#section-welcome-to-brooklyn" class="scroll nav-link">Sobre nós</a>
                                     </li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                        <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll">Quais as vantagens da manipulação?</a>
+                                        <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll nav-link">Quais as vantagens da manipulação?</a>
                                     </li>
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                        <a href="#section-happy-clients" class="scroll">Nossas filiais</a>
+                                        <a href="#section-happy-clients" class="scroll nav-link">Nossas filiais</a>
                                     </li>
                                     <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
-                                        <a href="#section-contact" class="scroll">Contato</a>
+                                        <a href="#section-contact" class="scroll nav-link">Contato</a>
                                     </li>
                                 </ul>
                             </div>
@@ -353,7 +348,7 @@
                             <!-- section header -->
                             <div class="grid-100 mobile-grid-100 tablet-grid-100">
                                 <header class="parallax-header pt-style-7 ">
-                                    <h2 class="parallax-title ">
+                                    <h2 style="padding: 10% 0cm 0cm 0cm;" class="parallax-title ">
                                         <span>Nossas filiais</span>
                                     </h2>
                                 </header>
@@ -460,7 +455,7 @@
                <div style="height: 82px; width: 1350px;" class="footer-content">
                 -->
                <footer class="footer ut-footer-dark">
-                    <a href="#top" class="toTop">
+                    <a href="#top" class="scroll toTop">
                         <i class="fa fa-angle-double-up"></i>
                     </a>
                     <!---->
@@ -477,6 +472,7 @@
                 </footer>
             </xpath>
         </template>
+        
         <template id="theme_florata-login" inherit_id="web.login" name="theme_florata">
             <!--
             <xpath expr="//form" position="attributes">
@@ -484,9 +480,77 @@
             </xpath>
             -->
         </template>
+        
+        <!---->
+        
+        <template id="theme_florata_shop_background_fix" inherit_id="website_sale.products" name="theme_florata_shop_background_fix">
+        
+            <xpath expr="//div[@id='wrap']" position="before">
+                    
+                    <div style="background:#d2c1d8; height: 6.7%;">
+                            
+                    </div>
+                    
+            </xpath>
+            
+            <xpath expr="//div[@id='wrap']" position="attributes">
+                        
+                <attribute name="style">
+                    
+                    background-color: #333; 
+                    background-image: url(/theme_florata/static/src/img/fundo.jpg); 
+                    background-size: 100% 100%;
+                    
+                </attribute>
+
+            </xpath>
+            
+            <xpath expr="//div[@id='wrap']//table" position="attributes">
+                        
+                <attribute name="style">
+                    
+                    background-color: #ffffff; 
+                    background-size: 100% 100%;
+                        
+                </attribute>
+
+            </xpath>        
+    
+            <xpath expr="//div[@id='wrap']//tr" position="attributes">
+                
+                <attribute name="style">
+                
+                    display: None;
+                
+                </attribute>
+
+            </xpath>        
+    
+        </template>
+        
+        <template id="theme_florata_shop_background" inherit_id="web.layout" name="theme_florata_shop_background">
+        
+            <xpath expr="//head" position="before">
+                
+                <style type="text/css">
+                
+                body.container {
+                background: none;
+                background-image: url("/theme_florata/static/src/img/fundo.jpg");
+                background-size: cover;
+                }
+                
+                </style>
+                
+            </xpath>
+         
+        </template>
+        
+        <!---->
+        
         <template id="homepage_template" inherit_id="website.homepage">
             <xpath expr="//div[@id='wrap']" position="inside">
-                <div>
+                <div class="div-controll">
                     <img src="/theme_florata/static/src/img/banner.jpg" style="height: 100%; width: 100%;"/>
                 </div>
             </xpath>
