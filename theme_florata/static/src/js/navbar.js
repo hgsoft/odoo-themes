@@ -86,3 +86,9 @@ $(window).scroll( throttle(highlightNavigation,100) );
 
 // if you don't want to throttle the function use this instead:
 // $(window).scroll( highlightNavigation );
+//////
+$(document).ready(function () {
+    $("nav").find("li").on("click", "a", function () {
+        $('.navbar-collapse.in').collapse('hide');
+    });
+});

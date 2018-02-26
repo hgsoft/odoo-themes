@@ -3,6 +3,81 @@
 
         <!---->
         
+        <template id="theme_florata_website_sale_confirmation" inherit_id="website_sale.confirmation" name="Theme Florata - Website Sale Confirmation">
+        
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 100px;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>
+        
+        <!---->
+        
+        <template id="theme_florata_website_sale_payment" inherit_id="website_sale.payment" name="Theme Florata - Website Sale Payment">
+        
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 100px;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>
+        
+        <!---->
+        
+        <template id="theme_florata_website_sale_checkout" inherit_id="website_sale.checkout" name="Theme Florata - Website Sale Checkout">
+        
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 100px;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>
+        
+        <!---->
+        
+        <template id="theme_florata_website_sale_cart" inherit_id="website_sale.cart" name="Theme Florata - Website Sale Cart">
+        
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 100px;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>
+                            
+        <!---->
+                
+        <template id="theme_florata_website_sale_product" inherit_id="website_sale.product" name="Theme Florata - Website Sale Product">
+        
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 100px;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>
+            
+        <!---->
+        
         <template id="theme_florata_portal_account_details" inherit_id="website_portal.details" name="Theme Florata - Portal Account Details">
         
             <xpath expr="//div" position="before">
