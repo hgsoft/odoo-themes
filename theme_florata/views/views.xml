@@ -192,7 +192,7 @@
                         <div class="ha-header-front">
                             <div class="grid-20 tablet-grid-50 mobile-grid-50 push-5">
                                 <div class="site-logo">
-                                    <a href="http://localhost:8069" title="Florata" rel="home">
+                                    <a href="/" title="Florata" rel="home">
                                         <img data-altlogo="/theme_florata/static/src/img/logo-florata.png" src="/theme_florata/static/src/img/logo-florata.png" alt="Florata"/>
                                     </a>
                                 </div>
@@ -201,7 +201,7 @@
                                 <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
                                     <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                                         <li class="ut-home-link">
-                                            <a href="http://localhost:8069" class="nav-link">Index</a>
+                                            <a href="/" class="nav-link">Index</a>
                                         </li>
                                     </li>
                                     <li class="ut-home-link">
@@ -222,14 +222,14 @@
                                     <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
                                         <li>
                                             <a style="background-color: transparent; border: transparent; border: none;"
-                                            href="http://localhost:8069/web/login"
+                                            href="/web/login"
                                             title="Edit Top Menu" class="nav-link">Entrar</a>
                                         </li>
                                     </li>
                                     <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                                         <li>
                                             <a class="nav-link" style="background-color: transparent; border: transparent; border: none;"
-                                            href="http://localhost:8069/shop">Pedidos de Parceiros</a>
+                                            href="/shop">Pedidos de Parceiros</a>
                                         </li>
                                     </li>                            
                                     <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
@@ -244,11 +244,11 @@
                                         class="dropdown-menu oe_content_menu" role="menu">
                                             <li>
                                                 <a style="background-color: transparent; border: transparent; border: none; color: black;"
-                                                href="http://localhost:8069/my/home"
+                                                href="/my/home"
                                                 title="Edit Top Menu">Minha Conta</a>
                                                 
                                             <a style="background-color: transparent; border: transparent; border: none; color: black;"
-                                                href="http://localhost:8069/web/session/logout?redirect=/"
+                                                href="/web/session/logout?redirect=/"
                                                 title="Edit Top Menu">Sair</a>
                                             </li>
                                         </ul>
@@ -263,7 +263,7 @@
                                     <ul id="ut-mobile-menu" class="ut-mobile-menu">
                                         <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                                             <li class="ut-home-link">
-                                                <a href="http://floratamanipulacao.com.br/" class="scroll" style="color: black;">Index</a>
+                                                <a href="/" class="scroll" style="color: black;">Index</a>
                                             </li>
                                         </li>
                                         <li class="ut-home-link">
@@ -284,24 +284,24 @@
                                         <!---->
                                     <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
                                         <li>
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/web/login" title="Edit Top Menu" class="nav-link">Entrar</a>
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/login" title="Edit Top Menu" class="nav-link">Entrar</a>
                                         </li>
                                     </li>
                                     <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                                         <li>
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/shop">Pedidos de Parceiros</a>
-                                        </li>
-                                    </li>
-                                    
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                        <li>
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/my/home" title="Edit Top Menu">Minha Conta</a>
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/shop">Pedidos de Parceiros</a>
                                         </li>
                                     </li>
                                     
                                     <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                                         <li>
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/my/home" title="Edit Top Menu">Minha Conta</a>
+                                        </li>
+                                    </li>
+                                    
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                        <li>
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
                                         </li>
                                     </li>
                                     <!--

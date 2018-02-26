@@ -86,9 +86,22 @@ $(window).scroll( throttle(highlightNavigation,100) );
 
 // if you don't want to throttle the function use this instead:
 // $(window).scroll( highlightNavigation );
+
 //////
-$(document).ready(function () {
-    $("nav").find("li").on("click", "a", function () {
-        $('.navbar-collapse.in').collapse('hide');
+/*
+jQuery(document).ready(function($){
+	$("#menu-icon").on("click", function(){
+		$("#menu").slideToggle();
+		$(this).toggleClass("active");
+	});
+    $('#menu li a').on("click", function(){
+        $('#menu').slideUp();
+    });
+});
+*/
+
+jQuery(document).ready(function($){
+$('#ut-mobile-nav li a').on("click", function(){
+        $('#ut-mobile-nav').slideUp();
     });
 });
