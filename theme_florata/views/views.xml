@@ -7,7 +7,7 @@
         
             <xpath expr="//div" position="before">
         
-                <div style="background:#d2c1d8; height: 13.0%;">
+                <div style="background:#d2c1d8; height: 100px;">
         
                         
                 </div>
@@ -22,7 +22,7 @@
         
             <xpath expr="//div" position="before">
         
-                <div style="background:#d2c1d8; height: 14.0%;">
+                <div style="background:#d2c1d8; height: 100px;">
         
                         
                 </div>
@@ -37,7 +37,7 @@
             
             <xpath expr="//div" position="before">
         
-                <div style="background:#d2c1d8; height: 16.0%;">
+                <div style="background:#d2c1d8; height: 100px;">
                             
                 </div>
                 
@@ -103,7 +103,11 @@
             <attribute name="style">position: absolute; left: -999em;</attribute>
         </xpath>
     
+        <!--
         <xpath expr="//header//ul[@id='top_menu']" position="inside">
+        -->
+        
+        <xpath expr="//header//div" position="inside">
             <section id="top">
                 <!--
                 <div style="z-index:9;" id="header-section" class="ha-header ha-transparent fullwidth navbar-fixed-top">
@@ -113,13 +117,18 @@
                         <div class="ha-header-front">
                             <div class="grid-20 tablet-grid-50 mobile-grid-50 push-5">
                                 <div class="site-logo">
-                                    <a href="http://floratamanipulacao.com.br/" title="Florata" rel="home">
+                                    <a href="http://localhost:8069" title="Florata" rel="home">
                                         <img data-altlogo="/theme_florata/static/src/img/logo-florata.png" src="/theme_florata/static/src/img/logo-florata.png" alt="Florata"/>
                                     </a>
                                 </div>
                             </div>
                             <nav id="navigation" class="grid-80 hide-on-tablet hide-on-mobile pull-5">
                                 <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                        <li class="ut-home-link">
+                                            <a href="http://localhost:8069" class="nav-link">Index</a>
+                                        </li>
+                                    </li>
                                     <li class="ut-home-link">
                                         <a href="#top" class="scroll nav-link">Home</a>
                                     </li>
@@ -177,21 +186,66 @@
                             <nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1370px; height: 202px; display: none;">
                                 <div class="ut-scroll-pane" style="width: 1367px; height: 202px;">
                                     <ul id="ut-mobile-menu" class="ut-mobile-menu">
+                                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                            <li class="ut-home-link">
+                                                <a href="http://floratamanipulacao.com.br/" class="scroll" style="color: black;">Index</a>
+                                            </li>
+                                        </li>
                                         <li class="ut-home-link">
-                                            <a href="#top" class="selected scroll nav-link">Home</a>
+                                            <a href="#top" class="selected scroll" style="color: black;">Home</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="#section-welcome-to-brooklyn" class="scroll nav-link">Sobre nós</a>
+                                            <a href="#section-welcome-to-brooklyn" class="scroll" style="color: black;">Sobre nós</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll nav-link">Quais as vantagens da manipulação?</a>
+                                            <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll" style="color: black;">Quais as vantagens da manipulação?</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="#section-happy-clients" class="scroll nav-link">Nossas filiais</a>
+                                            <a href="#section-happy-clients" class="scroll" style="color: black;">Nossas filiais</a>
                                         </li>
                                         <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
-                                            <a href="#section-contact" class="scroll nav-link">Contato</a>
+                                            <a href="#section-contact" class="scroll" style="color: black;">Contato</a>
                                         </li>
+                                        <!---->
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+                                        <li>
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/web/login" title="Edit Top Menu" class="nav-link">Entrar</a>
+                                        </li>
+                                    </li>
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                        <li>
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/shop">Pedidos de Parceiros</a>
+                                        </li>
+                                    </li>
+                                    
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                        <li>
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/my/home" title="Edit Top Menu">Minha Conta</a>
+                                        </li>
+                                    </li>
+                                    
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                        <li>
+                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
+                                        </li>
+                                    </li>
+                                    <!--
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                        <a style="background-color: transparent; border: transparent; border: none;" class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                            <b>
+                                                <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
+                                                <span class="caret"/>
+                                            </b>
+                                        </a>
+                                        <ul style="background-color: transparent; border: transparent; border: none;" class="dropdown-menu oe_content_menu" role="menu">
+                                            <li>
+                                                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/my/home" title="Edit Top Menu">Minha Conta</a>
+                                                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    -->
+                                    <!---->
                                     </ul>
                                 </div>
                             </nav>
@@ -465,7 +519,7 @@
         
             <xpath expr="//div[@id='wrap']" position="before">
                     
-                    <div style="background:#d2c1d8; height: 6.7%;">
+                    <div style="background:#d2c1d8; height: 100px;">
                             
                     </div>
                     
