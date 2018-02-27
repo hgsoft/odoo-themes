@@ -2,9 +2,13 @@ $(function () {
   $(document).scroll(function () {
 	  var $nav = $(".navbar-fixed-top");
           var $div = $(".div-controll");
-	  $nav.toggleClass('scrolled', $(this).scrollTop() > ($nav.height() + $div.height()));
+	  //$nav.toggleClass('scrolled', $(this).scrollTop() > ($nav.height() + $div.height()));
           
-          if($(this).scrollTop() > ($nav.height() + $div.height())) {
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $div.height());
+          
+          //if($(this).scrollTop() > ($nav.height() + $div.height())) {
+              
+          if($(this).scrollTop() > $div.height()) {
           
             jQuery(document).ready(function(){
             jQuery(".nav-link").css({'color':'black', 'margin-right':'auto'});    

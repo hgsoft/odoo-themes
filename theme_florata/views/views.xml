@@ -199,11 +199,13 @@
                             </div>
                             <nav id="navigation" class="grid-80 hide-on-tablet hide-on-mobile pull-5">
                                 <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
+                                    <!--
                                     <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                                         <li class="ut-home-link">
                                             <a href="/" class="nav-link">Index</a>
                                         </li>
                                     </li>
+                                    -->
                                     <li class="ut-home-link">
                                         <a href="#top" class="scroll nav-link">Home</a>
                                     </li>
@@ -261,11 +263,13 @@
                             <nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1370px; height: 202px; display: none;">
                                 <div class="ut-scroll-pane" style="width: 1367px; height: 202px;">
                                     <ul id="ut-mobile-menu" class="ut-mobile-menu">
+                                        <!--
                                         <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                                             <li class="ut-home-link">
                                                 <a href="/" class="scroll" style="color: black;">Index</a>
                                             </li>
                                         </li>
+                                        -->
                                         <li class="ut-home-link">
                                             <a href="#top" class="selected scroll" style="color: black;">Home</a>
                                         </li>
@@ -340,7 +344,7 @@
             <xpath expr="//div[@id='wrap']" position="inside">
                 <section style="background-image: url(/theme_florata/static/src/img/background-2b.jpg);" id="welcome-to-brooklyn" data-effect="fadeIn" data-width="centered" class="page-id-25 entry-content normal-background  dark   ">
                     <a class="ut-offset-anchor" id="section-welcome-to-brooklyn" name="section-welcome-to-brooklyn">welcome-to-brooklyn</a>
-                    <div class="grid-container section-header-holder" style="opacity: 1;">
+                    <div class="grid-container section-header-holder" style="opacity: 1; padding: 60px">
                         <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                             <header class="parallax-header pt-style-7 ">
                                 <h2 class="parallax-title ">
@@ -399,7 +403,7 @@
             <xpath expr="//div[@id='wrap']" position="inside">
                 <section id="quais-as-vantagens-da-manipulacao" data-effect="fadeIn" data-width="centered" class="page-id-2704 entry-content normal-background  dark   ">
                     <a class="ut-offset-anchor" id="section-quais-as-vantagens-da-manipulacao" name="section-quais-as-vantagens-da-manipulacao">quais-as-vantagens-da-manipulacao</a>
-                    <div class="grid-container section-header-holder" style="opacity: 1;">
+                    <div class="grid-container section-header-holder" style="opacity: 1; padding: 60px">
                         <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                             <header class="parallax-header pt-style-7 ">
                                 <h2 class="parallax-title ">
