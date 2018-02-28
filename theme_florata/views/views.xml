@@ -258,7 +258,7 @@
         </li> 
         <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
             <li>
-                <a style="background-color: transparent; border: transparent; border: none;" href="/web/login" title="Edit Top Menu" class="nav-link">Entrar | Registrar-se</a>
+                <a style="background-color: transparent; border: transparent; border: none;" href="/web/login" class="nav-link">Entrar | Registrar-se</a>
             </li>
         </li>
         <!-- Loged off -->                                    
@@ -289,9 +289,9 @@
             </a>
             <ul style="background-color: transparent; border: transparent; border: none;" class="dropdown-menu oe_content_menu" role="menu">
                 <li>
-                    <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/my/home" title="Edit Top Menu">Minha Conta</a>
+                    <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/my/home">Minha Conta</a>
                     
-                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/session/logout?redirect=/">Sair</a>
                 </li>
             </ul>
         </li>
@@ -358,20 +358,20 @@
         </li>
         <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
             <li>
-                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/login" title="Edit Top Menu">Entrar | Registrar-se</a>
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/login">Entrar | Registrar-se</a>
             </li>
         </li>
 
         
         <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
             <li>
-                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/my/home" title="Edit Top Menu">Minha Conta</a>
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/my/home">Minha Conta</a>
             </li>
         </li>
         
         <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
             <li>
-                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/session/logout?redirect=/">Sair</a>
             </li>
         </li>
         <!--
@@ -721,9 +721,20 @@
         </template>
         
         <template id="theme_florata_login" inherit_id="web.login" name="Theme Florata - Login">
+            
+            <!---->
+            
+            <xpath expr="//div/../.." position="before">
+                <div style="background:#d2c1d8; height: 95px;"></div>
+            </xpath>
+            
+            <!---->
+            
+            <!--
             <xpath expr="//form" position="before">
                 <div style="background:#d2c1d8; height: 95px;"></div>
             </xpath>
+            -->
         </template>
         
         <template id="theme_florata_shop_background_fix" inherit_id="website_sale.products" name="theme_florata_shop_background_fix">
