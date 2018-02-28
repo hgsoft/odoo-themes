@@ -306,7 +306,7 @@
         </li> 
         <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
             <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                <a href="#section-happy-clients" class="scroll" style="color: black;">Nossas filiais</a>
+                <a href="#section-happy-clients-mob" class="scroll" style="color: black;">Nossas filiais</a>
             </li>
         </li> 
         <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
@@ -503,13 +503,79 @@
             </xpath>
             
             <xpath expr="//div[@id='wrap']" position="inside">
-                <section id="happy-clients" data-effect="fadeIn" data-width="centered" class="page-id-80 entry-content normal-background  light   ">
+                <section id="happy-clients" data-effect="fadeIn" data-width="centered" class="hide-on-tablet hide-on-mobile
+                         page-id-80 entry-content normal-background  light   ">
                     <a class="ut-offset-anchor" id="section-happy-clients" name="section-happy-clients">happy-clients</a>
                     <div style="height: 451px; width: 1350px;" class="parallax-overlay parallax-overlay-pattern style_one">
                         <div class="grid-container section-header-holder" style="opacity: 1;">
                             <div class="grid-100 mobile-grid-100 tablet-grid-100">
                                 <header class="parallax-header pt-style-7 ">
                                     <h2 style="padding: 10% 0cm 0cm 0cm;" class="parallax-title ">
+                                        <span>Nossas filiais</span>
+                                    </h2>
+                                </header>
+                            </div>
+                        </div>
+                        <div class="clear"/>
+                        <div class="grid-container section-content" style="opacity: 1;">
+                            <div class="grid-100 mobile-grid-100 tablet-grid-100">
+                                <p style="text-align: center;">
+                                    <span style="color: #ffffff;"/>
+                                </p>
+                                <div data-effect="slideInLeft" class="ut-one-half  animated slideInLeft">
+                                    <span class="aligncenter ut-custom-icon">
+                                        <i class="fa fa-map-marker fa-5x" style="color:#ffffff"/>
+                                    </span>
+                                    <p/>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">Terceira Avenida, 1215 – Centro,</span>
+                                    </p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">Balneário Camboriú – SC, 88330-095</span>
+                                    </p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">
+                                            <a style="color: #ffffff;" href="https://www.google.com.br/maps/place/Florata+Farm%C3%A1cia+de+Manipula%C3%A7%C3%A3o/@-26.9972922,-48.6330473,15z/data=!4m5!3m4!1s0x0:0x8ff9520868a6106!8m2!3d-26.9972922!4d-48.6330473" target="_blank" rel="noopener">Clique para ver no mapa.</a>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div data-effect="slideInRight" class="ut-one-half ut-column-last  animated slideInRight">
+                                    <span class="aligncenter ut-custom-icon">
+                                        <i class="fa fa-map-marker fa-5x" style="color:#ffffff"/>
+                                    </span>
+                                    <p/>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">Heitor Liberato, 1550 – São João,</span>
+                                    </p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">Itajaí – SC, 88304-101</span>
+                                    </p>
+                                    <p style="text-align: center;">
+                                        <span style="color: #ffffff;">
+                                            <a style="color: #ffffff;" href="https://www.google.com.br/maps/place/Bistek+Supermercados/@-26.9063579,-48.6729694,15z/data=!4m5!3m4!1s0x0:0x21c1726bd6c36b86!8m2!3d-26.9063579!4d-48.6729694" target="_blank" rel="noopener">Clique para ver no mapa.</a>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="clear"/>
+                                <p/>
+                                <div class="brookly-hatom-data" style="display:none;visibility:hidden;"/>
+                            </div>
+                        </div>
+                        <div class="clear"/>
+                    </div>
+                    <div class="ut-scroll-up-waypoint" data-section="section-happy-clients"/>
+                </section>
+            </xpath>
+            
+            <xpath expr="//div[@id='wrap']" position="inside">
+                <section id="happy-clients" data-effect="fadeIn" data-width="centered" class="hide-on-desktop 
+                page-id-80 entry-content normal-background  light   ">
+                    <a class="ut-offset-anchor" id="section-happy-clients-mob" name="section-happy-clients-mob">happy-clients</a>
+                    <div style="height: 600px;" class="parallax-overlay parallax-overlay-pattern style_one">
+                        <div class="grid-container section-header-holder" style="opacity: 1;">
+                            <div class="grid-100 mobile-grid-100 tablet-grid-100">
+                                <header class="parallax-header pt-style-7 ">
+                                    <h2 style="padding: 110px 0cm 0cm 0cm;" class="parallax-title ">
                                         <span>Nossas filiais</span>
                                     </h2>
                                 </header>
