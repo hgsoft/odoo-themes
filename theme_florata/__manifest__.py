@@ -33,7 +33,7 @@
     
     'version': '1.0',
 
-    'depends': ['base', 'website_sale'],
+    'depends': ['base', 'website_sale', 'website_anonymous_hide_prices'],
 
     'data': [
         # 'security/ir.model.access.csv',

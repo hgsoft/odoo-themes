@@ -1,6 +1,19 @@
 <odoo>
     <data>
 
+        <template id="theme_florata_website_register" inherit_id="website.register" name="Theme Florata - Website Register_b2b">
+        
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 100px;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>          
+        
         <!---->
         
         <template id="theme_florata_website_sale_address" inherit_id="website_sale.address" name="Theme Florata - Website Sale Address">
