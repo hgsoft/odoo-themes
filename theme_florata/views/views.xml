@@ -258,7 +258,7 @@
         </li> 
         <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
             <li>
-                <a style="background-color: transparent; border: transparent; border: none;" href="/web/login" title="Edit Top Menu" class="nav-link">Entrar</a>
+                <a style="background-color: transparent; border: transparent; border: none;" href="/web/login" title="Edit Top Menu" class="nav-link">Entrar | Registrar-se</a>
             </li>
         </li>
         <!-- Loged off -->                                    
@@ -358,7 +358,7 @@
         </li>
         <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
             <li>
-                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/login" title="Edit Top Menu">Entrar</a>
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/login" title="Edit Top Menu">Entrar | Registrar-se</a>
             </li>
         </li>
 
