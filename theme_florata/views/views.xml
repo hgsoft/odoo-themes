@@ -3,6 +3,21 @@
 
         <!---->
         
+        <template id="theme_florata_website_sale_address" inherit_id="website_sale.address" name="Theme Florata - Website Sale Address">
+        
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 100px;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>        
+                   
+        <!---->
+        
         <template id="theme_florata_website_sale_confirmation" inherit_id="website_sale.confirmation" name="Theme Florata - Website Sale Confirmation">
         
             <xpath expr="//div" position="before">
@@ -71,6 +86,14 @@
         
                         
                 </div>
+                
+            </xpath>
+            
+            <xpath expr="//div[@class='row']" position="attributes">
+                
+                <attribute name="style">
+                    padding: 10px 0px 0px 0px;
+                </attribute>
                 
             </xpath>
             
