@@ -198,136 +198,179 @@
                                 </div>
                             </div>
                             <nav id="navigation" class="grid-80 hide-on-tablet hide-on-mobile pull-5">
-                                <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
-                                    <!--
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                        <li class="ut-home-link">
-                                            <a href="/" class="nav-link">Index</a>
-                                        </li>
-                                    </li>
-                                    -->
-                                    <li class="ut-home-link">
-                                        <a href="#top" class="scroll nav-link">Home</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                        <a href="#section-welcome-to-brooklyn" class="selected scroll nav-link">Sobre nós</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                        <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll nav-link">Quais as vantagens da manipulação?</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                        <a href="#section-happy-clients" class="scroll nav-link">Nossas filiais</a>
-                                    </li>
-                                    <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom">
-                                        <a href="#section-contact" class="scroll nav-link">Contato</a>
-                                    </li>
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
-                                        <li>
-                                            <a style="background-color: transparent; border: transparent; border: none;"
-                                            href="/web/login"
-                                            title="Edit Top Menu" class="nav-link">Entrar</a>
-                                        </li>
-                                    </li>
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                        <li>
-                                            <a class="nav-link" style="background-color: transparent; border: transparent; border: none;"
-                                            href="/shop">Pedidos de Parceiros</a>
-                                        </li>
-                                    </li>                            
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                        <a style="background-color: transparent; border: transparent; border: none;" 
-                                        class="dropdown-toggle" href="#" data-toggle="dropdown">
-                                            <b>
-                                                <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
-                                                <span class="caret"/>
-                                            </b>
-                                        </a>
-                                        <ul style="background-color: transparent; border: transparent; border: none;"
-                                        class="dropdown-menu oe_content_menu" role="menu">
-                                            <li>
-                                                <a style="background-color: transparent; border: transparent; border: none; color: black;"
-                                                href="/my/home"
-                                                title="Edit Top Menu">Minha Conta</a>
-                                                
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;"
-                                                href="/web/session/logout?redirect=/"
-                                                title="Edit Top Menu">Sair</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <div class="ut-mm-trigger tablet-grid-50 mobile-grid-50 hide-on-desktop">
-                                <button class="ut-mm-button"></button>
-                            </div>
-                            <nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1370px; height: 202px; display: none;">
-                                <div class="ut-scroll-pane" style="width: 1367px; height: 202px;">
-                                    <ul id="ut-mobile-menu" class="ut-mobile-menu">
-                                        <!--
-                                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                            <li class="ut-home-link">
-                                                <a href="/" class="scroll" style="color: black;">Index</a>
-                                            </li>
-                                        </li>
-                                        -->
-                                        <li class="ut-home-link">
-                                            <a href="#top" class="selected scroll" style="color: black;">Home</a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="#section-welcome-to-brooklyn" class="scroll" style="color: black;">Sobre nós</a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll" style="color: black;">Quais as vantagens da manipulação?</a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="#section-happy-clients" class="scroll" style="color: black;">Nossas filiais</a>
-                                        </li>
-                                        <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
-                                            <a href="#section-contact" class="scroll" style="color: black;">Contato</a>
-                                        </li>
-                                        <!---->
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
-                                        <li>
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/login" title="Edit Top Menu" class="nav-link">Entrar</a>
-                                        </li>
-                                    </li>
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                        <li>
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/shop">Pedidos de Parceiros</a>
-                                        </li>
-                                    </li>
-                                    
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                        <li>
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/my/home" title="Edit Top Menu">Minha Conta</a>
-                                        </li>
-                                    </li>
-                                    
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                        <li>
-                                            <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
-                                        </li>
-                                    </li>
-                                    <!--
-                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                                        <a style="background-color: transparent; border: transparent; border: none;" class="dropdown-toggle" href="#" data-toggle="dropdown">
-                                            <b>
-                                                <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
-                                                <span class="caret"/>
-                                            </b>
-                                        </a>
-                                        <ul style="background-color: transparent; border: transparent; border: none;" class="dropdown-menu oe_content_menu" role="menu">
-                                            <li>
-                                                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/my/home" title="Edit Top Menu">Minha Conta</a>
-                                                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    -->
-                                    <!---->
-                                    </ul>
-                                </div>
-                            </nav>
+    <ul id="menu-main" class="menu sf-js-enabled sf-arrows">
+        <!--
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <li class="ut-home-link">
+                <a href="/" class="nav-link">Index</a>
+            </li>
+        </li>
+        -->
+        
+        <!-- Loged on -->
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="ut-home-link">
+                <a href="#top" class="scroll nav-link">Home</a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#section-welcome-to-brooklyn" class="selected scroll nav-link">Sobre nós</a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll nav-link">Quais as vantagens da manipulação?</a>
+            </li>
+        </li> 
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#section-happy-clients" class="scroll nav-link">Nossas filiais</a>
+            </li>
+        </li> 
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="#section-contact" class="scroll nav-link">Contato</a>
+            </li>
+        </li> 
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li>
+                <a style="background-color: transparent; border: transparent; border: none;" href="/web/login" title="Edit Top Menu" class="nav-link">Entrar</a>
+            </li>
+        </li>
+        <!-- Loged off -->                                    
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <li class="ut-home-link">
+                <a href="/" class="nav-link">Home</a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <li>
+                <a class="nav-link" style="background-color: transparent; border: transparent; border: none;" href="/shop">Pedidos de Parceiros</a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <li t-att-class="'' if website_sale_order and website_sale_order.cart_quantity else 'hidden'">
+                <a href="/shop/cart" class="nav-link">
+                    <i class="fa fa-shopping-cart nav-link"/>
+                    Meu carrinho <sup t-attf-class="my_cart_quantity label label-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''"/>
+                </a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <a style="background-color: transparent; border: transparent; border: none;" class="dropdown-toggle" href="#" data-toggle="dropdown">
+                <b>
+                    <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
+                    <span class="caret"/>
+                </b>
+            </a>
+            <ul style="background-color: transparent; border: transparent; border: none;" class="dropdown-menu oe_content_menu" role="menu">
+                <li>
+                    <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/my/home" title="Edit Top Menu">Minha Conta</a>
+                    
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div class="ut-mm-trigger tablet-grid-50 mobile-grid-50 hide-on-desktop">
+    <button class="ut-mm-button"/>
+</div>
+<nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1370px; height: 202px; display: none;">
+    <div class="ut-scroll-pane" style="width: 1367px; height: 202px;">
+        <ul id="ut-mobile-menu" class="ut-mobile-menu">
+            <!--
+            <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                <li class="ut-home-link">
+                    <a href="/" class="scroll" style="color: black;">Index</a>
+                </li>
+            </li>
+            -->
+            <!---->
+                                                <!-- Loged on -->
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="ut-home-link">
+                <a href="#top" class="selected scroll" style="color: black;">Home</a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                <a href="#section-welcome-to-brooklyn" class="scroll" style="color: black;">Sobre nós</a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                <a href="#section-quais-as-vantagens-da-manipulacao" class="scroll" style="color: black;">Quais as vantagens da manipulação?</a>
+            </li>
+        </li> 
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                <a href="#section-happy-clients" class="scroll" style="color: black;">Nossas filiais</a>
+            </li>
+        </li> 
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li class="contact-us menu-item menu-item-type-custom menu-item-object-custom  last">
+                <a href="#section-contact" class="scroll" style="color: black;">Contato</a>
+            </li>
+        </li> 
+        <!-- Loged off -->                                    
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <li class="ut-home-link">
+                <a href="/" class="selected" style="color: black;">Home</a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <li>
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/shop">Pedidos de Parceiros</a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <li t-att-class="'' if website_sale_order and website_sale_order.cart_quantity else 'hidden'">
+                <a href="/shop/cart" style="color: black;">
+                    <i class="fa fa-shopping-cart"/>
+                    Meu carrinho <sup t-attf-class="my_cart_quantity label label-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''"/>
+                </a>
+            </li>
+        </li>
+        <li class="dropdown" t-ignore="true" t-if="website.user_id == user_id">
+            <li>
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/login" title="Edit Top Menu">Entrar</a>
+            </li>
+        </li>
+
+        
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <li>
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/my/home" title="Edit Top Menu">Minha Conta</a>
+            </li>
+        </li>
+        
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <li>
+                <a style="background-color: transparent; border: transparent; border: none; color: black;" href="/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
+            </li>
+        </li>
+        <!--
+        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+            <a style="background-color: transparent; border: transparent; border: none;" class="dropdown-toggle" href="#" data-toggle="dropdown">
+                <b>
+                    <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
+                    <span class="caret"/>
+                </b>
+            </a>
+            <ul style="background-color: transparent; border: transparent; border: none;" class="dropdown-menu oe_content_menu" role="menu">
+                <li>
+                    <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/my/home" title="Edit Top Menu">Minha Conta</a>
+                    <a style="background-color: transparent; border: transparent; border: none; color: black;" href="http://localhost:8069/web/session/logout?redirect=/" title="Edit Top Menu">Sair</a>
+                </li>
+            </ul>
+        </li>
+        -->
+        <!---->
+        </ul>
+    </div>
+</nav>
                         </div>
                     </div>
                 </div>
