@@ -1,6 +1,43 @@
 <odoo>
     <data>
-
+        
+        <!-- NOT WORKING YET -->
+        
+        <!--
+    
+        <template id="theme_florata_portal_account_details" inherit_id="br_website_sale.br_website_portal_my_account" name="Theme Florata - Portal Account Details Fix">
+        
+            <xpath expr="//div[@class='row o_website_portal_details']/div" position="replace">
+            
+                <div class="form-group col-lg-12" style="margin-bottom: 0px;">
+                 
+                    <label class="control-label" for="person_type">Tipo de Pessoa</label>
+                
+                </div>
+                
+            </xpath>
+            
+        </template>
+        
+        -->
+        
+        <!---->
+        
+        <template id="theme_florata_website_crm_contactus_thanks" inherit_id="website_crm.contactus_thanks" name="Theme Florata - Website CRM Contactus Thanks">
+        
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 100px;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>          
+        
+        <!---->
+        
         <template id="theme_florata_website_register" inherit_id="website.register" name="Theme Florata - Website Register_b2b">
         
             <xpath expr="//div" position="before">
