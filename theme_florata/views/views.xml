@@ -2,8 +2,8 @@
     <data>
 
         
-        <!---->
-        
+        <!-- NOT WORKING -->
+        <!--
         <template id="theme_florata_reset_password" inherit_id="auth_signup.reset_password" name="Theme Florata - Reset Password">
             
             <xpath expr="//div/.." position="before">
@@ -23,7 +23,7 @@
             </xpath>
             
         </template>
-        
+        -->
         <!---->
         
         <template id="theme_florata_shop_address_fix" inherit_id="br_website_sale.br_website_sale_address" name="Theme Florata - Shop Address Fix">
