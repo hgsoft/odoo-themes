@@ -3,16 +3,16 @@
 
         
         <!-- NOT WORKING -->
-        <!--
+        
         <template id="theme_florata_reset_password" inherit_id="auth_signup.reset_password" name="Theme Florata - Reset Password">
             
-            <xpath expr="//div/.." position="before">
+            <xpath expr="//form" position="before">
                 
-                <div style="background:#d2c1d8; height: 115px;"/>
+                <div style="background:#d2c1d8; height: 100px;"/>
             
             </xpath>
 
-            <xpath expr="//div[@class='oe_website_login_container modal-content']" position="attributes">
+            <xpath expr="//div" position="attributes">
                 
                 <attribute name="style">
             
@@ -23,7 +23,7 @@
             </xpath>
             
         </template>
-        -->
+        
         <!---->
         
         <template id="theme_florata_shop_address_fix" inherit_id="br_website_sale.br_website_sale_address" name="Theme Florata - Shop Address Fix">
