@@ -1,5 +1,59 @@
 <odoo>
     <data>
+
+        
+        <!---->
+        
+        <template id="theme_florata_reset_password" inherit_id="auth_signup.reset_password" name="Theme Florata - Reset Password">
+            
+            <xpath expr="//div" position="before">
+        
+                <div style="background:#d2c1d8; height: 100px;">
+        
+                        
+                </div>
+                
+            </xpath>
+            
+        </template>
+        
+        <!---->
+        
+        <template id="theme_florata_shop_address_fix" inherit_id="br_website_sale.br_website_sale_address" name="Theme Florata - Shop Address Fix">
+            
+            <xpath expr="//form[@class='checkout_autoformat']/div[2]" position="replace">
+            
+                <div style="margin-left: 15px; margin-top: 10px; padding-bottom: 10px;" class="radio form-group col-lg-12">
+                
+                    <div class="col-xs-6 col-sm-3">
+                    
+                        <label>
+                        
+                            <input style="display:inline; margin-left: -25px;" type="radio" name="company_type" id="radioCompany" value="company"
+                            t-att-checked="'company_type' in checkout and checkout['company_type'] == 'company'"/>
+                            Pessoa Jurídica
+
+                        </label>
+                        
+                    </div>
+                    
+                    <div class="col-xs-6 col-sm-3">
+                        
+                        <label>
+                    
+                            <input style="display:inline; margin-left: -25px;" type="radio" name="company_type" id="radioPerson" value="person"
+                            t-att-checked="'company_type' in checkout and checkout['company_type'] == 'person'"/>
+                            Pessoa Física
+            
+                        </label>
+                
+                    </div>
+                    
+                </div>
+                
+            </xpath>
+            
+        </template>
         
         <!---->
         
