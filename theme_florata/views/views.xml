@@ -2,21 +2,21 @@
     <data>
 
         
-        <!-- NOT WORKING -->
+        <!-- NOT TESTED -->
         
         <template id="theme_florata_reset_password" inherit_id="auth_signup.reset_password" name="Theme Florata - Reset Password">
-            
-            <xpath expr="//form" position="before">
+         
+            <xpath expr="//div/.." position="before">
                 
                 <div style="background:#d2c1d8; height: 100px;"/>
             
             </xpath>
-
-            <xpath expr="//div" position="attributes">
+            
+            <xpath expr="//form" position="attributes">
                 
                 <attribute name="style">
             
-                    width: 350px;
+                    padding: 10px 10px 10px 10px;
                     
                 </attribute>
             
