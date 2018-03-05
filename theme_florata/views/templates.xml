@@ -118,6 +118,7 @@ var retina_logos = {"sitelogo_retina":"/theme_florata/static/src/img/logo-florat
 <script type='text/javascript' src='/theme_florata/static/src/js/ut-init.js'></script>
 <script type='text/javascript' src='/theme_florata/static/src/js/wp-embed.min.js'></script>
       
+<!--
     <script type="text/javascript">
     /* <![CDATA[ */        
         
@@ -296,6 +297,8 @@ var retina_logos = {"sitelogo_retina":"/theme_florata/static/src/img/logo-florat
 				     
      /* ]]> */
     </script>     
+
+-->
     <!---->
     <!--
     <link rel="stylesheet" href="/theme_masterplast/static/src/css/website_sale.css" />
