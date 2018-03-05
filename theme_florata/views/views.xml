@@ -2,7 +2,7 @@
     <data>
 
         
-        <!-- NOT TESTED -->
+        <!---->
         
         <template id="theme_florata_reset_password" inherit_id="auth_signup.reset_password" name="Theme Florata - Reset Password">
          
@@ -535,7 +535,7 @@
         <template id="theme_florata_homepage" inherit_id="website.homepage" name="Theme Florata - Homepage">
             
             <xpath expr="//div[@id='wrap']" position="inside">
-                <section style="background-image: url(/theme_florata/static/src/img/background-2b.jpg);" id="welcome-to-brooklyn" data-effect="fadeIn" data-width="centered" class="page-id-25 entry-content normal-background  dark   ">
+                <section id="welcome-to-brooklyn" data-effect="fadeIn" data-width="centered" class="page-id-25 entry-content normal-background  dark   ">
                     <a class="ut-offset-anchor" id="section-welcome-to-brooklyn" name="section-welcome-to-brooklyn">welcome-to-brooklyn</a>
                     <div class="grid-container section-header-holder" style="opacity: 1; padding: 60px">
                         <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
@@ -557,28 +557,28 @@
                             <p style="text-align: center;"/>
                             <div class="ut-one-fourth  ">
                                 <div style="text-align:center; ">
-                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/derma.png"/>
+                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/derma.jpg"/>
                                 </div>
                                 <p> </p>
                                 <p style="text-align: center;">FÓRMULAS DERMATOLÓGICAS</p>
                             </div>
                             <div class="ut-one-fourth  ">
                                 <div style="text-align:center; ">
-                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/fito.png"/>
+                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/fito.jpg"/>
                                 </div>
                                 <p> </p>
                                 <p style="text-align: center;">FITOTERÁPICOS E NUTRACÊUTICOS</p>
                             </div>
                             <div class="ut-one-fourth  ">
                                 <div style="text-align:center; ">
-                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/capsula.png"/>
+                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/capsula.jpg"/>
                                 </div>
                                 <p> </p>
                                 <p style="text-align: center;">MEDICAMENTOS ALOPÁTICOS</p>
                             </div>
                             <div class="ut-one-fourth ut-column-last  ">
                                 <div style="text-align:center; ">
-                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/homeo.png"/>
+                                    <img alt="" class="ut-animate-image animated" data-effecttype="image" data-effect="slideInDown" src="theme_florata/static/src/img/homeo.jpg"/>
                                 </div>
                                 <p> </p>
                                 <p style="text-align: center;">FLORAIS E HOMEOPATIAS</p>
