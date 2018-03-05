@@ -146,7 +146,7 @@ var retina_logos = {"sitelogo_retina":"/theme_florata/static/src/img/logo-florat
                                                                 
                                                                 percentage: true,						
 								completeAnimation: "fade",
-								minimumTime: 500,
+								minimumTime: 50,
 								onComplete : function() {
 								
 									$(".ut-loader-overlay").fadeOut( 600 , "easeInOutExpo" , function() {
