@@ -74,7 +74,7 @@
                     
                         <label>
                         
-                            <input style="display:inline; margin-left: -25px;" type="radio" name="company_type" id="radioCompany" value="company" t-att-checked="(company_type or partner.company_type) == 'company'"/>
+                            <input style="-webkit-appearance: radio; display:inline; margin-left: -25px;" type="radio" name="company_type" id="radioCompany" value="company" t-att-checked="(company_type or partner.company_type) == 'company'"/>
                             Pessoa Jurídica
                             
                         </label>
@@ -85,7 +85,7 @@
                         
                         <label>
                     
-                            <input style="display:inline; margin-left: -25px;" type="radio" name="company_type" id="radioPerson" value="person" t-att-checked="(company_type or partner.company_type) == 'person'"/>
+                            <input style="-webkit-appearance: radio; display:inline; margin-left: -25px;" type="radio" name="company_type" id="radioPerson" value="person" t-att-checked="(company_type or partner.company_type) == 'person'"/>
                             Pessoa Física
                                     
                         </label>
