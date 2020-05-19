@@ -1,0 +1,35 @@
+.header-content-header-logo {
+    float: left;
+    width: 220px;
+    margin: 38px 0;   
+}
+.header-content-h3 {
+    font-family: "Montserrat Bold";
+    text-transform: uppercase;
+    color: #607382;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    height: 25px;
+    padding-top: 4px;
+}
+.header-content-img {
+    margin-top: 2px !important;
+    height: 75px !important;
+    max-width: 100%;
+}
+.navbar-brand {
+    height: 100%;
+    float: left;
+    width: 220px;
+    margin: 38px 0;
+}
+#top_menu {
+    font-family: "Montserrat Bold";
+    text-transform: uppercase;
+    color: #39559b;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 50px;
+}

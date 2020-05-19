@@ -1,0 +1,24 @@
+<odoo>
+  <data>
+    <template id="theme_screw_website_logo_show" inherit_id="website.layout_logo_show" name="Theme Screw - Show Logo">
+        
+        <xpath expr="//header//a[hasclass('navbar-brand')]" position="replace">
+            <!--
+            <a href="http://screw.ind.br/pt" class="header-logo">
+                <img src="http://screw.ind.br/assets/images/img/logo-screwHeader.png">
+                <br>
+                <h3>Tecnologia em transporte helicoidal </h3>
+            </a>
+            -->
+            <a href="/" class="navbar-brand logo">
+                <div>
+                    <img class="header-content-img" src="http://screw.ind.br/assets/images/img/logo-screwHeader.png" t-options="{'widget': 'image'}" t-att-alt="res_company.name" t-att-title="res_company.name"/>
+                    <br/>
+                    <h3 class="header-content-h3">Tecnologia em transporte helicoidal </h3>
+                </div>
+            </a>
+        </xpath>        
+        
+    </template>      
+  </data>
+</odoo>
