@@ -10,12 +10,14 @@
     text-align: center;
     font-size: 12px;
     margin: 0;
-    height: 25px;
+    /*height: 25px;*/
+    height: 5px;
     padding-top: 4px;
 }
 .header-content-img {
     margin-top: 2px !important;
-    height: 75px !important;
+    /*height: 75px !important;*/
+    height: 65px !important;
     max-width: 100%;
 }
 .navbar-brand {
@@ -32,4 +34,5 @@
     font-weight: bold;
     position: relative;
     margin-top: 50px;
+    font-size: 12px;
 }
