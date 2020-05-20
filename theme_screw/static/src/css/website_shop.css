@@ -16,7 +16,8 @@
     font-weight: bold;
 }
 .header-content-img {
-    margin-top: 2px !important;
+    /*margin-top: 2px !important;*/
+    margin-top: -20px !important;
     /*height: 75px !important;*/
     height: 65px !important;
     max-width: 100%;
@@ -29,7 +30,8 @@
 }
 #top_menu {
     letter-spacing: 2px;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
+    margin-top: 30px;
 }
 #top_menu li a span {
     /*font-family: "Montserrat Bold" !important;*/
