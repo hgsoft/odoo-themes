@@ -42,6 +42,12 @@
     position: relative;
     font-size: 12px;
 }
+#top_menu li a span:hover {
+    color: #bac5e0 !important;
+}    
+#top_menu li a {
+    outline: 0;
+}
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
