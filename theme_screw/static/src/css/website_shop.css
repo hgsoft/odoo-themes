@@ -4,7 +4,7 @@
     margin: 38px 0;   
 }
 .header-content-h3 {
-    font-family: "Montserrat Bold";
+    /*font-family: "Montserrat Bold";*/
     text-transform: uppercase;
     color: #607382;
     text-align: center;
@@ -13,6 +13,7 @@
     /*height: 25px;*/
     height: 5px;
     padding-top: 4px;
+    font-weight: bold;
 }
 .header-content-img {
     margin-top: 2px !important;
@@ -27,12 +28,19 @@
     margin: 38px 0;
 }
 #top_menu {
-    font-family: "Montserrat Bold";
-    text-transform: uppercase;
-    color: #39559b;
     letter-spacing: 2px;
+    margin-top: 50px;
+}
+#top_menu li a span {
+    /*font-family: "Montserrat Bold" !important;*/
+    font-family: unset;
+    text-transform: uppercase;
+    color: #39559b !important;
     font-weight: bold;
     position: relative;
-    margin-top: 50px;
     font-size: 12px;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
 }

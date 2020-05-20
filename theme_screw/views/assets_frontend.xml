@@ -5,7 +5,8 @@
     <template id="theme_screw_assets_fronted" name="Theme Screw Assets Frontend" inherit_id="website.assets_frontend">
 
         <xpath expr="//script[last()]" position="after">
-            <link rel="stylesheet" href="/theme_screw/static/src/css/website_shop.css" />
+            <link rel="stylesheet" type="text/css" href="/theme_screw/static/src/css/website_shop.css"/>
+            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat"/>
         </xpath>
 
     </template>
