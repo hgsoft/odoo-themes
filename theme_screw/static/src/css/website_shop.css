@@ -44,11 +44,15 @@
 }
 #top_menu li a span:hover {
     color: #bac5e0 !important;
-}    
+}
 #top_menu li a {
     outline: 0;
 }
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
+}
+#my_cart a {
+    color: #39559b !important;
+    font-weight: bold;
 }
